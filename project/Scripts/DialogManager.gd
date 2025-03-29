@@ -20,8 +20,8 @@ func start_game()->void:
 	is_playing = true
 	dialog_mode = false
 	current_dialog_id = 0
-	dialog_mode = true
-	current_dialog_id = 66
+	# dialog_mode = true
+	# current_dialog_id = 77
 	if dialog_mode:
 		dialog_box.show()
 		centered_text_box.hide()
@@ -134,7 +134,7 @@ func plot_end():
 func change_background(filename:String):
 	var texture_background : Texture
 	if filename == "black":
-		texture_background = load("res://Assets/background/black.tres")
+		texture_background = load("res://Assets/The Color of Sin/Décors/black.tres")
 		dialog_box.hide()
 		centered_text_box.show()
 		print("TODO")

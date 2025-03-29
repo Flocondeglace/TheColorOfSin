@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://c8vu7i3yrmnnq" path="res://Scripts/DialogManager.gd" id="1_erj4e"]
 [ext_resource type="PackedScene" uid="uid://ctfdg7113fa48" path="res://Scenes/dialog.tscn" id="2_qfmdu"]
 [ext_resource type="Texture2D" uid="uid://njwxh80f4sjy" path="res://Assets/The Color of Sin/ecran acceuil.jpg" id="2_wrm1d"]
-[ext_resource type="Texture2D" uid="uid://dsohdxcbgxgpm" path="res://Assets/background/Téléphone.png" id="4_3dryh"]
+[ext_resource type="Texture2D" uid="uid://eory3qljun" path="res://Assets/The Color of Sin/Décors/Téléphone.png" id="4_3dryh"]
 
 [sub_resource type="Animation" id="Animation_ionbg"]
 length = 0.001
@@ -95,6 +95,21 @@ tracks/0/keys = {
 "values": [Color(1, 1, 1, 1), Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
 }
 
+[sub_resource type="Animation" id="Animation_i6g32"]
+resource_name = "play_effect"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../CanvasLayer/Effect:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
 [sub_resource type="Animation" id="Animation_3nas4"]
 resource_name = "sonne"
 length = 2.0
@@ -149,21 +164,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_i6g32"]
-resource_name = "play_effect"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../../CanvasLayer/Effect:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gl4vm"]
