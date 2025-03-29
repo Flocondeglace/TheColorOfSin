@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=6 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_hlksu"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_0vnbj"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="3_yyn7u"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_p20vw"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_4y2xr"]
+
+[resource]
+script = ExtResource("5_4y2xr")
+id = 89
+next = 100
+character = ExtResource("1_hlksu")
+character_mood = "pyjama_intrigué_gauche"
+character_droit = ExtResource("3_yyn7u")
+character_mood_droit = "droite_souriant"
+character_centre = ExtResource("2_0vnbj")
+character_mood_centre = "droite_surprise"
+left_talker = false
+center_talker = false
+text = "Je l’ai trouvé… singulière que pensez vous de lui faire passer LE test?"
+choices = Array[ExtResource("4_p20vw")]([])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=4 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_uigqu"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_d6nk8"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_kg0g2"]
+
+[resource]
+script = ExtResource("3_kg0g2")
+id = 13
+next = 14
+character = ExtResource("1_uigqu")
+character_mood = "normal_heureuse"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "Coucou ma puce, comment c’est passé ta journée ?"
+choices = Array[ExtResource("2_d6nk8")]([])

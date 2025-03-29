@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_qay0i"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_kwdlm"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_nqlai"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_dlvtc"]
+
+[sub_resource type="Resource" id="Resource_quvbx"]
+script = ExtResource("3_nqlai")
+action = 4
+params = ["Chambre nuit fil ouvert.jpg"]
+
+[sub_resource type="Resource" id="Resource_ke6lh"]
+script = ExtResource("3_nqlai")
+action = 1
+params = [28.0]
+
+[sub_resource type="Resource" id="Resource_jypu4"]
+script = ExtResource("2_kwdlm")
+text = ""
+actions = Array[ExtResource("3_nqlai")]([SubResource("Resource_quvbx"), SubResource("Resource_ke6lh")])
+
+[resource]
+script = ExtResource("4_dlvtc")
+id = 27
+next = 28
+character = ExtResource("1_qay0i")
+character_mood = "pyjama_surprise"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "(Plus je m’approche de lui plus il devient rouge. J'arrive devant mon armoire je prend mon courage à 2 mains et j’ouvre d’un coup mon armoire)"
+choices = Array[ExtResource("2_kwdlm")]([SubResource("Resource_jypu4")])

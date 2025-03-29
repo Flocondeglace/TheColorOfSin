@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=9 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_b7xjm"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_6mhtc"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_nmlaq"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_nusnx"]
+
+[sub_resource type="Resource" id="Resource_roej6"]
+script = ExtResource("3_nmlaq")
+action = 1
+params = [6.0]
+
+[sub_resource type="Resource" id="Resource_laqyv"]
+script = ExtResource("2_6mhtc")
+text = "arrête d'y penser"
+actions = Array[ExtResource("3_nmlaq")]([SubResource("Resource_roej6")])
+
+[sub_resource type="Resource" id="Resource_6gho2"]
+script = ExtResource("3_nmlaq")
+action = 1
+params = [8.0]
+
+[sub_resource type="Resource" id="Resource_54qif"]
+script = ExtResource("2_6mhtc")
+text = "se venger"
+actions = Array[ExtResource("3_nmlaq")]([SubResource("Resource_6gho2")])
+
+[resource]
+script = ExtResource("4_nusnx")
+id = 5
+next = 6
+character = ExtResource("1_b7xjm")
+character_mood = "normal_soupir"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "Encore une fois cette journée de cours fut un enfer. J’ai encore attiré l’attention… Je suis sûr d’avoir entendu des gens se moquer de mois…"
+choices = Array[ExtResource("2_6mhtc")]([SubResource("Resource_laqyv"), SubResource("Resource_54qif")])

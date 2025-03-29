@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_701f8"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_rmejs"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_cbaty"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_xedlg"]
+
+[resource]
+script = ExtResource("4_xedlg")
+id = 115
+next = 116
+character = ExtResource("1_701f8")
+character_mood = "pyjama_neutre_gauche"
+character_droit = ExtResource("2_rmejs")
+character_mood_droit = "droite_neutre"
+character_mood_centre = ""
+left_talker = false
+center_talker = false
+text = "Non je t’ai juste sondé."
+choices = Array[ExtResource("3_cbaty")]([])

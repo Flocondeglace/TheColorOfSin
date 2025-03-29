@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=9 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_xabeu"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_8q7nb"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_jjby2"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="4_3i8ri"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_r3wbm"]
+
+[sub_resource type="Resource" id="Resource_pmqo4"]
+script = ExtResource("4_3i8ri")
+action = 4
+params = ["Salle cristaux.JPG"]
+
+[sub_resource type="Resource" id="Resource_nfltj"]
+script = ExtResource("4_3i8ri")
+action = 1
+params = [105.0]
+
+[sub_resource type="Resource" id="Resource_phncb"]
+script = ExtResource("3_jjby2")
+text = ""
+actions = Array[ExtResource("4_3i8ri")]([SubResource("Resource_pmqo4"), SubResource("Resource_nfltj")])
+
+[resource]
+script = ExtResource("5_r3wbm")
+id = 104
+next = 105
+character = ExtResource("1_xabeu")
+character_mood = "pyjama_neutre_gauche"
+character_droit = ExtResource("2_8q7nb")
+character_mood_droit = "droite_neutre"
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "[i]Je me mis à le suivre sans réfléchir sans doute de peur des représailles si je me montrais trop rebelle.[/i]"
+choices = Array[ExtResource("3_jjby2")]([SubResource("Resource_phncb")])

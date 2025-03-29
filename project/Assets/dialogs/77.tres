@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=6 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_kujpd"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="2_052vh"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="3_7s5qc"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_7405e"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_whojg"]
+
+[resource]
+script = ExtResource("5_whojg")
+id = 77
+next = 78
+character = ExtResource("1_kujpd")
+character_mood = "pyjama_timide_gauche"
+character_droit = ExtResource("3_7s5qc")
+character_mood_droit = "droit_colere"
+character_centre = ExtResource("2_052vh")
+character_mood_centre = "souriant"
+left_talker = true
+center_talker = true
+text = "Je te connais pas toi. Qu’est-ce que tu fais là ?"
+choices = Array[ExtResource("4_7405e")]([])

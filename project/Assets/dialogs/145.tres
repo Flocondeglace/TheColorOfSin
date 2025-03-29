@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_8534n"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="2_k7c3m"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_m0047"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_d5rxw"]
+
+[resource]
+script = ExtResource("4_d5rxw")
+id = 145
+next = 146
+character = ExtResource("1_8534n")
+character_mood = "pyjama_heureuse_gauche"
+character_droit = ExtResource("2_k7c3m")
+character_mood_droit = "droit_explication"
+character_mood_centre = ""
+left_talker = false
+center_talker = false
+text = "Tu es de quel type ?"
+choices = Array[ExtResource("3_m0047")]([])

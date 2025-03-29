@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=6 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_d28hg"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_fm2u4"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="3_eskye"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_a52cl"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_6s4ex"]
+
+[resource]
+script = ExtResource("5_6s4ex")
+id = 95
+next = 96
+character = ExtResource("1_d28hg")
+character_mood = "pyjama_panique_gauche"
+character_droit = ExtResource("3_eskye")
+character_mood_droit = "droite_souriant"
+character_centre = ExtResource("2_fm2u4")
+character_mood_centre = "droite_surprise"
+left_talker = true
+center_talker = false
+text = "Vous allez me prendre pour une folle mais je dormais et là il y a eu un fil bizarre qui est apparu de nulle part. Je l’ai touché et ça m’a amené dans un endroit où j’ai vu un gros machin blanc et noir!"
+choices = Array[ExtResource("4_a52cl")]([])

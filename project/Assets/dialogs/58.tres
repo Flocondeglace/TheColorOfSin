@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Professeur.tres" id="1_wat4q"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_qi66w"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_nv7n7"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_4ueas"]
+
+[sub_resource type="Resource" id="Resource_yu1r8"]
+script = ExtResource("3_nv7n7")
+action = 4
+params = ["Prophétie.PNG"]
+
+[sub_resource type="Resource" id="Resource_abvc1"]
+script = ExtResource("3_nv7n7")
+action = 1
+params = [59.0]
+
+[sub_resource type="Resource" id="Resource_3a44i"]
+script = ExtResource("2_qi66w")
+text = ""
+actions = Array[ExtResource("3_nv7n7")]([SubResource("Resource_yu1r8"), SubResource("Resource_abvc1")])
+
+[resource]
+script = ExtResource("4_4ueas")
+id = 58
+next = 59
+character = ExtResource("1_wat4q")
+character_mood = "heureuse"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "C’est tout à fait ça Safia. Et dans ses savoirs, il y a l’un des plus mystérieux"
+choices = Array[ExtResource("2_qi66w")]([SubResource("Resource_3a44i")])

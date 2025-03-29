@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_3wi8d"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_j1olb"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_sjm0h"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_obyfp"]
+
+[sub_resource type="Resource" id="Resource_e72fh"]
+script = ExtResource("3_sjm0h")
+action = 4
+params = ["Classe.JPG"]
+
+[sub_resource type="Resource" id="Resource_inuci"]
+script = ExtResource("3_sjm0h")
+action = 1
+params = [51.0]
+
+[sub_resource type="Resource" id="Resource_xpr06"]
+script = ExtResource("2_j1olb")
+text = ""
+actions = Array[ExtResource("3_sjm0h")]([SubResource("Resource_e72fh"), SubResource("Resource_inuci")])
+
+[resource]
+script = ExtResource("4_obyfp")
+id = 50
+next = 51
+character = ExtResource("1_3wi8d")
+character_mood = "pyjama_intrigué_gauche"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "(J’ai à peine le temps de réaliser se qui ce passe qu’il m’amène jusqu’à un portail.)"
+choices = Array[ExtResource("2_j1olb")]([SubResource("Resource_xpr06")])

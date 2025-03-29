@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=4 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Inconnu.tres" id="1_icjfs"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_uv5ul"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_mhy4f"]
+
+[resource]
+script = ExtResource("3_mhy4f")
+id = 25
+next = -1
+character = ExtResource("1_icjfs")
+character_mood = "happy"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "fin du jeu merci d’avoir joué "
+choices = Array[ExtResource("2_uv5ul")]([])

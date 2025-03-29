@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=6 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_bi1an"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_es12n"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="3_xf2g0"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_c6q31"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_dfyfr"]
+
+[resource]
+script = ExtResource("5_dfyfr")
+id = 94
+next = 100
+character = ExtResource("1_bi1an")
+character_mood = "pyjama_surprise_gauche"
+character_droit = ExtResource("3_xf2g0")
+character_mood_droit = "droite_taquin"
+character_centre = ExtResource("2_es12n")
+character_mood_centre = "droite_colere"
+left_talker = false
+center_talker = false
+text = "Je ne sais pas, je la trouve singulière… "
+choices = Array[ExtResource("4_c6q31")]([])

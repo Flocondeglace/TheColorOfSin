@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=6 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_rh6s2"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_bx244"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="3_6h1if"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_cq8w5"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_y4ojj"]
+
+[resource]
+script = ExtResource("5_y4ojj")
+id = 84
+next = 85
+character = ExtResource("1_rh6s2")
+character_mood = "pyjama_neutre_gauche"
+character_droit = ExtResource("3_6h1if")
+character_mood_droit = "droite_souriant"
+character_centre = ExtResource("2_bx244")
+character_mood_centre = "droite_neutre"
+left_talker = true
+center_talker = false
+text = "On m’a amené ici pour m’aider…"
+choices = Array[ExtResource("4_cq8w5")]([])

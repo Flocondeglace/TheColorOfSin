@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=6 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_che2u"]
+[ext_resource type="Resource" path="res://Assets/characters/Professeur.tres" id="2_cwmms"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="3_r87sb"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_2ep7c"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_t5f1k"]
+
+[resource]
+script = ExtResource("5_t5f1k")
+id = 68
+next = 69
+character = ExtResource("1_che2u")
+character_mood = "pyjama_neutre_gauche"
+character_droit = ExtResource("3_r87sb")
+character_mood_droit = "droit_inquiet"
+character_centre = ExtResource("2_cwmms")
+character_mood_centre = "colere"
+left_talker = false
+center_talker = false
+text = "Tu fais quoi? "
+choices = Array[ExtResource("4_2ep7c")]([])

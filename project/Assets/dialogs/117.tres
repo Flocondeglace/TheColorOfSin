@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="1_r4u5q"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_74jrd"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_rabl8"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_67exl"]
+
+[sub_resource type="Resource" id="Resource_kpcvy"]
+script = ExtResource("3_rabl8")
+action = 4
+params = ["Vision.PNG"]
+
+[sub_resource type="Resource" id="Resource_di7v3"]
+script = ExtResource("3_rabl8")
+action = 1
+params = [118.0]
+
+[sub_resource type="Resource" id="Resource_3l5ol"]
+script = ExtResource("2_74jrd")
+text = ""
+actions = Array[ExtResource("3_rabl8")]([SubResource("Resource_kpcvy"), SubResource("Resource_di7v3")])
+
+[resource]
+script = ExtResource("4_67exl")
+id = 117
+next = 118
+character = ExtResource("1_r4u5q")
+character_mood = "explication"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "Et la plus rare la magie « vision » liée au temps."
+choices = Array[ExtResource("2_74jrd")]([SubResource("Resource_3l5ol")])

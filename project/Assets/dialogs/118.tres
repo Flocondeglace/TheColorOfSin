@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_kakwx"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_yeg6v"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_gwrmx"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_ps8lt"]
+
+[resource]
+script = ExtResource("4_ps8lt")
+id = 118
+next = 119
+character = ExtResource("1_kakwx")
+character_mood = "pyjama_panique_gauche"
+character_droit = ExtResource("2_yeg6v")
+character_mood_droit = "droite_explication"
+character_mood_centre = ""
+left_talker = false
+center_talker = false
+text = "Pour savoir quel est ton type de magie il existe un test Tu vas devoir aller au centre du cercle de cristal."
+choices = Array[ExtResource("3_gwrmx")]([])

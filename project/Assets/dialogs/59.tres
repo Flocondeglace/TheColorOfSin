@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Professeur.tres" id="1_jj031"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_04cog"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_t4cas"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_pqgmx"]
+
+[sub_resource type="Resource" id="Resource_mhq47"]
+script = ExtResource("3_t4cas")
+action = 4
+params = ["Classe.JPG"]
+
+[sub_resource type="Resource" id="Resource_uxwbh"]
+script = ExtResource("3_t4cas")
+action = 1
+params = [60.0]
+
+[sub_resource type="Resource" id="Resource_qgbhj"]
+script = ExtResource("2_04cog")
+text = ""
+actions = Array[ExtResource("3_t4cas")]([SubResource("Resource_mhq47"), SubResource("Resource_uxwbh")])
+
+[resource]
+script = ExtResource("4_pqgmx")
+id = 59
+next = 60
+character = ExtResource("1_jj031")
+character_mood = "heureuse"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "C’est la prophétie."
+choices = Array[ExtResource("2_04cog")]([SubResource("Resource_qgbhj")])

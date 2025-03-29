@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ActionData" load_steps=2 format=3 uid="uid://bxtrxgeaxircf"]
+
+[ext_resource type="Script" uid="uid://dfmlsyn8olvnf" path="res://Scripts/ActionData.gd" id="1_hch4b"]
+
+[resource]
+script = ExtResource("1_hch4b")
+action = 2
+params = [10]

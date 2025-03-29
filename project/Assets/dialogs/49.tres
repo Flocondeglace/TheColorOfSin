@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=9 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_cfgwr"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="2_ngjkg"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_x14uf"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="4_0qejm"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_cflf8"]
+
+[sub_resource type="Resource" id="Resource_e25ok"]
+script = ExtResource("4_0qejm")
+action = 4
+params = ["Zoom portail.JPG"]
+
+[sub_resource type="Resource" id="Resource_lpre7"]
+script = ExtResource("4_0qejm")
+action = 1
+params = [50.0]
+
+[sub_resource type="Resource" id="Resource_60er8"]
+script = ExtResource("3_x14uf")
+text = ""
+actions = Array[ExtResource("4_0qejm")]([SubResource("Resource_e25ok"), SubResource("Resource_lpre7")])
+
+[resource]
+script = ExtResource("5_cflf8")
+id = 49
+next = 50
+character = ExtResource("1_cfgwr")
+character_mood = "pyjama_surprise_gauche"
+character_droit = ExtResource("2_ngjkg")
+character_mood_droit = "droit_neutre"
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "Attend…"
+choices = Array[ExtResource("3_x14uf")]([SubResource("Resource_60er8")])

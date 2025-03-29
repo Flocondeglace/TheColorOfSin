@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_yv6oe"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_ogd60"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_4jyuk"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_3eobp"]
+
+[resource]
+script = ExtResource("4_3eobp")
+id = 131
+next = 132
+character = ExtResource("1_yv6oe")
+character_mood = "pyjama_intrigué_gauche"
+character_droit = ExtResource("2_ogd60")
+character_mood_droit = "droite_neutre"
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "Reçu quelque chose? Comme quoi?"
+choices = Array[ExtResource("3_4jyuk")]([])

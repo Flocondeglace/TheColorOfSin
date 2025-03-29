@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_q4boo"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_4x8oe"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_m37xh"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_i766m"]
+
+[sub_resource type="Resource" id="Resource_ng5rv"]
+script = ExtResource("3_m37xh")
+action = 9
+params = ["Effet magique 2.PNG"]
+
+[sub_resource type="Resource" id="Resource_1sk8s"]
+script = ExtResource("3_m37xh")
+action = 1
+params = [127.0]
+
+[sub_resource type="Resource" id="Resource_243gp"]
+script = ExtResource("2_4x8oe")
+text = ""
+actions = Array[ExtResource("3_m37xh")]([SubResource("Resource_ng5rv"), SubResource("Resource_1sk8s")])
+
+[resource]
+script = ExtResource("4_i766m")
+id = 126
+next = 127
+character = ExtResource("1_q4boo")
+character_mood = "pyjama_surprise"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "[i]les cristaux clignotent, c’est normal ? Et c'est moi ou je commence à flotter dans les airs là ?[/i]"
+choices = Array[ExtResource("2_4x8oe")]([SubResource("Resource_243gp")])

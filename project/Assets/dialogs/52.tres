@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_n05tw"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="2_iktva"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_y6nh3"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_iqsrp"]
+
+[resource]
+script = ExtResource("4_iqsrp")
+id = 52
+next = 53
+character = ExtResource("1_n05tw")
+character_mood = "pyjama_surprise_gauche"
+character_droit = ExtResource("2_iktva")
+character_mood_droit = "droit_surprise"
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "(Soudain, la sonnerie retentit.)"
+choices = Array[ExtResource("3_y6nh3")]([])

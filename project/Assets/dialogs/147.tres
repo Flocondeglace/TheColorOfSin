@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=9 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_jy8my"]
+[ext_resource type="Resource" path="res://Assets/characters/Safia.tres" id="2_r7jen"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_j2fen"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="4_f6p75"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_twy0i"]
+
+[sub_resource type="Resource" id="Resource_eypiv"]
+script = ExtResource("4_f6p75")
+action = 4
+params = ["black"]
+
+[sub_resource type="Resource" id="Resource_y5ear"]
+script = ExtResource("4_f6p75")
+action = 1
+params = [148.0]
+
+[sub_resource type="Resource" id="Resource_milao"]
+script = ExtResource("3_j2fen")
+text = ""
+actions = Array[ExtResource("4_f6p75")]([SubResource("Resource_eypiv"), SubResource("Resource_y5ear")])
+
+[resource]
+script = ExtResource("5_twy0i")
+id = 147
+next = 148
+character = ExtResource("1_jy8my")
+character_mood = "pyjama_surprise_gauche"
+character_mood_droit = ""
+character_centre = ExtResource("2_r7jen")
+character_mood_centre = "intrigué"
+left_talker = true
+center_talker = true
+text = " Compliqué comment ?"
+choices = Array[ExtResource("3_j2fen")]([SubResource("Resource_milao")])

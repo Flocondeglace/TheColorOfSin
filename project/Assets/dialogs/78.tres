@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=6 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_wltvb"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="2_1ctp6"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="3_smbir"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_owtnx"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_nqb24"]
+
+[resource]
+script = ExtResource("5_nqb24")
+id = 78
+next = 79
+character = ExtResource("1_wltvb")
+character_mood = "pyjama_surprise_gauche"
+character_droit = ExtResource("3_smbir")
+character_mood_droit = "droit_colere"
+character_centre = ExtResource("2_1ctp6")
+character_mood_centre = "souriant"
+left_talker = false
+center_talker = false
+text = "Désolé on a pas le temps."
+choices = Array[ExtResource("4_owtnx")]([])

@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="1_rcuy2"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_7w075"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_ejc3i"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_v2pb2"]
+
+[sub_resource type="Resource" id="Resource_ldxbw"]
+script = ExtResource("3_ejc3i")
+action = 4
+params = ["Zone.PNG"]
+
+[sub_resource type="Resource" id="Resource_3rla7"]
+script = ExtResource("3_ejc3i")
+action = 1
+params = [117.0]
+
+[sub_resource type="Resource" id="Resource_tlc38"]
+script = ExtResource("2_7w075")
+text = ""
+actions = Array[ExtResource("3_ejc3i")]([SubResource("Resource_ldxbw"), SubResource("Resource_3rla7")])
+
+[resource]
+script = ExtResource("4_v2pb2")
+id = 116
+next = 117
+character = ExtResource("1_rcuy2")
+character_mood = "explication"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "Il y a aussi la magie « zone » liée à l’espace."
+choices = Array[ExtResource("2_7w075")]([SubResource("Resource_tlc38")])

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=6 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_80637"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_8kwqj"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="3_t2gtc"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_7yh05"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_s61v7"]
+
+[resource]
+script = ExtResource("5_s61v7")
+id = 91
+next = 92
+character = ExtResource("1_80637")
+character_mood = "pyjama_panique_gauche"
+character_droit = ExtResource("3_t2gtc")
+character_mood_droit = "droite_souriant"
+character_centre = ExtResource("2_8kwqj")
+character_mood_centre = "droite_colere"
+left_talker = true
+center_talker = true
+text = "Vous ne voulez pas répondre… très bien alors ça ne vous dérange si je vous met à la porte."
+choices = Array[ExtResource("4_7yh05")]([])

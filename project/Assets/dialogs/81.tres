@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_vqxcc"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="2_txhui"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_nqmom"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_352dj"]
+
+[resource]
+script = ExtResource("4_352dj")
+id = 81
+next = 82
+character = ExtResource("1_vqxcc")
+character_mood = "pyjama_panique_gauche"
+character_droit = ExtResource("2_txhui")
+character_mood_droit = "souriant"
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "(En un claquement de doigts une foule me sépara de Eole.)"
+choices = Array[ExtResource("3_nqmom")]([])

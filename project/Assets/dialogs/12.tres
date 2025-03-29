@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_mvwtv"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_w1v2g"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_84mx4"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_tev6y"]
+
+[sub_resource type="Resource" id="Resource_40dai"]
+script = ExtResource("3_84mx4")
+action = 1
+params = [13.0]
+
+[sub_resource type="Resource" id="Resource_n5nod"]
+script = ExtResource("3_84mx4")
+action = 5
+params = ["Papa"]
+
+[sub_resource type="Resource" id="Resource_mbmm4"]
+script = ExtResource("2_w1v2g")
+text = "suivant"
+actions = Array[ExtResource("3_84mx4")]([SubResource("Resource_40dai"), SubResource("Resource_n5nod")])
+
+[resource]
+script = ExtResource("4_tev6y")
+id = 12
+next = 13
+character = ExtResource("1_mvwtv")
+character_mood = "normal_heureuse"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "(Bon, j’ai des nouilles dans le placard, et j’ai fini mes devoirs. Je vais enfin pouvoir lire un peu!)"
+choices = Array[ExtResource("2_w1v2g")]([SubResource("Resource_mbmm4")])

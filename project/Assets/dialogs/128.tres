@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=4 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_spl6m"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_rd8t8"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_b61r1"]
+
+[resource]
+script = ExtResource("3_b61r1")
+id = 128
+next = 129
+character = ExtResource("1_spl6m")
+character_mood = "pyjama_soupir"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "Tout c'est enfin arrêté."
+choices = Array[ExtResource("2_rd8t8")]([])

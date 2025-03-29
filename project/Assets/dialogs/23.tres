@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_050v1"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_8poav"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_s2o0l"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_dxxvh"]
+
+[sub_resource type="Resource" id="Resource_tbbwp"]
+script = ExtResource("3_s2o0l")
+action = 4
+params = ["Chambre nuit fil.jpg"]
+
+[sub_resource type="Resource" id="Resource_4qyyv"]
+script = ExtResource("3_s2o0l")
+action = 1
+params = [24.0]
+
+[sub_resource type="Resource" id="Resource_i3ukg"]
+script = ExtResource("2_8poav")
+text = ""
+actions = Array[ExtResource("3_s2o0l")]([SubResource("Resource_tbbwp"), SubResource("Resource_4qyyv")])
+
+[resource]
+script = ExtResource("4_dxxvh")
+id = 23
+next = 24
+character = ExtResource("1_050v1")
+character_mood = "pyjama_surprise"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "(Oh mince je me suis endormi en lisant! Je savais que j’aurais du m’arrêter quand il était 2h du matin.)"
+choices = Array[ExtResource("2_8poav")]([SubResource("Resource_i3ukg")])

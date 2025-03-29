@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=9 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_jeest"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_ixxkl"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_675l3"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_wov2h"]
+
+[sub_resource type="Resource" id="Resource_nh5i0"]
+script = ExtResource("3_675l3")
+action = 7
+params = []
+
+[sub_resource type="Resource" id="Resource_6ohu5"]
+script = ExtResource("3_675l3")
+action = 1
+params = [140.0]
+
+[sub_resource type="Resource" id="Resource_yrg8q"]
+script = ExtResource("3_675l3")
+action = 4
+params = ["Classe.JPG"]
+
+[sub_resource type="Resource" id="Resource_mhs5d"]
+script = ExtResource("2_ixxkl")
+text = ""
+actions = Array[ExtResource("3_675l3")]([SubResource("Resource_nh5i0"), SubResource("Resource_6ohu5"), SubResource("Resource_yrg8q")])
+
+[resource]
+script = ExtResource("4_wov2h")
+id = 139
+next = 140
+character = ExtResource("1_jeest")
+character_mood = "pyjama_panique"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "[i]Je crois...[/i]"
+choices = Array[ExtResource("2_ixxkl")]([SubResource("Resource_mhs5d")])

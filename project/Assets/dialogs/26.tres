@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=4 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_arkp2"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_vajjo"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_jgo24"]
+
+[resource]
+script = ExtResource("3_jgo24")
+id = 26
+next = 27
+character = ExtResource("1_arkp2")
+character_mood = "pyjama_intrigué"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "C’est quoi ce fils bizarre qui flotte dans les air depuis mon armoire?"
+choices = Array[ExtResource("2_vajjo")]([])

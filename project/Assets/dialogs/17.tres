@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_w1i5r"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_ccpor"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_jdtr6"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_s7gls"]
+
+[sub_resource type="Resource" id="Resource_h6c2p"]
+script = ExtResource("3_jdtr6")
+action = 1
+params = [19.0]
+
+[sub_resource type="Resource" id="Resource_1fu2r"]
+script = ExtResource("3_jdtr6")
+action = 5
+params = ["Maman"]
+
+[sub_resource type="Resource" id="Resource_og14n"]
+script = ExtResource("2_ccpor")
+text = ""
+actions = Array[ExtResource("3_jdtr6")]([SubResource("Resource_h6c2p"), SubResource("Resource_1fu2r")])
+
+[resource]
+script = ExtResource("4_s7gls")
+id = 17
+next = 18
+character = ExtResource("1_w1i5r")
+character_mood = "normal_heureuse"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "Oui papa j’ai pas oublié"
+choices = Array[ExtResource("2_ccpor")]([SubResource("Resource_og14n")])

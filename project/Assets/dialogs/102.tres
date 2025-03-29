@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_fmoyo"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="2_b4ia7"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_3xxro"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_qq6yc"]
+
+[resource]
+script = ExtResource("4_qq6yc")
+id = 102
+next = 103
+character = ExtResource("1_fmoyo")
+character_mood = "pyjama_neutre_gauche"
+character_droit = ExtResource("2_b4ia7")
+character_mood_droit = "droite_souriant"
+character_mood_centre = ""
+left_talker = true
+center_talker = true
+text = "Merci Neven tu peux retourner en cours."
+choices = Array[ExtResource("3_3xxro")]([])

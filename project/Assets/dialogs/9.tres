@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_y0bp6"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_3d2sa"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_hif57"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_10eym"]
+
+[sub_resource type="Resource" id="Resource_kwbn5"]
+script = ExtResource("3_hif57")
+action = 4
+params = ["Chambre.jpg"]
+
+[sub_resource type="Resource" id="Resource_ihpbj"]
+script = ExtResource("3_hif57")
+action = 1
+params = [10.0]
+
+[sub_resource type="Resource" id="Resource_vspye"]
+script = ExtResource("2_3d2sa")
+text = ""
+actions = Array[ExtResource("3_hif57")]([SubResource("Resource_kwbn5"), SubResource("Resource_ihpbj")])
+
+[resource]
+script = ExtResource("4_10eym")
+id = 9
+next = 10
+character = ExtResource("1_y0bp6")
+character_mood = "normal_heureuse"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "J’ai tellement hâte de jeter dans mon lit!"
+choices = Array[ExtResource("2_3d2sa")]([SubResource("Resource_vspye")])

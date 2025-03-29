@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_cou2l"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="2_8wotg"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_1bmhj"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_ujga2"]
+
+[resource]
+script = ExtResource("4_ujga2")
+id = 142
+next = 143
+character = ExtResource("1_cou2l")
+character_mood = "pyjama_heureuse_gauche"
+character_droit = ExtResource("2_8wotg")
+character_mood_droit = "droit_heureux"
+character_mood_centre = ""
+left_talker = false
+center_talker = false
+text = "D’ailleurs je ne connais toujours pas ton prénom."
+choices = Array[ExtResource("3_1bmhj")]([])

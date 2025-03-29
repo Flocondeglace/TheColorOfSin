@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_62pd1"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="2_t8uie"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_5f4jk"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_2p7eb"]
+
+[resource]
+script = ExtResource("4_2p7eb")
+id = 75
+next = 76
+character = ExtResource("1_62pd1")
+character_mood = "pyjama_neutre_gauche"
+character_droit = ExtResource("2_t8uie")
+character_mood_droit = "droit_neutre"
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "[i]je suivait Eole quand j’ai remarqué un élève un peu plus âgé qui semblait me fixer[/i]"
+choices = Array[ExtResource("3_5f4jk")]([])

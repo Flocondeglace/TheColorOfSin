@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CharacterData" load_steps=2 format=3 uid="uid://bppbf8x7112va"]
+
+[ext_resource type="Script" uid="uid://bmilat36hx0eb" path="res://Scripts/CharacterData.gd" id="1_na2ic"]
+
+[resource]
+script = ExtResource("1_na2ic")
+name = "Eole"
+spriteFolder = "res://Assets/The Color of Sin/Personnage/Eole"
+color = Color(1, 1, 1, 0.392157)
+love = 0

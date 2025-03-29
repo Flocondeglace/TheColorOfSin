@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=4 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Inconnu.tres" id="1_d5i2e"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_wby58"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_f1ois"]
+
+[resource]
+script = ExtResource("3_f1ois")
+id = 2
+next = 3
+character = ExtResource("1_d5i2e")
+character_mood = "happy"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "Dans The Color of Sin, votre progression et sauvegardée automatiquement: vous ne pouvez pas modifier vos décisions."
+choices = Array[ExtResource("2_wby58")]([])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=4 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_hngub"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_hvmi8"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_yqplm"]
+
+[resource]
+script = ExtResource("3_yqplm")
+id = 11
+next = 12
+character = ExtResource("1_hngub")
+character_mood = "normal_heureuse"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "(Je lâche mes affaires et me jette sur mon lit.)"
+choices = Array[ExtResource("2_hvmi8")]([])

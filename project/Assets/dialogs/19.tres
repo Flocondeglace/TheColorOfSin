@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_qmsxu"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_d7ecg"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_0c0wi"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_d4t5j"]
+
+[sub_resource type="Resource" id="Resource_7fyys"]
+script = ExtResource("3_0c0wi")
+action = 1
+params = [20.0]
+
+[sub_resource type="Resource" id="Resource_unvkc"]
+script = ExtResource("3_0c0wi")
+action = 6
+params = []
+
+[sub_resource type="Resource" id="Resource_ixa4q"]
+script = ExtResource("2_d7ecg")
+text = ""
+actions = Array[ExtResource("3_0c0wi")]([SubResource("Resource_7fyys"), SubResource("Resource_unvkc")])
+
+[resource]
+script = ExtResource("4_d4t5j")
+id = 19
+next = 20
+character = ExtResource("1_qmsxu")
+character_mood = "normal_heureuse"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "Bisous."
+choices = Array[ExtResource("2_d7ecg")]([SubResource("Resource_ixa4q")])

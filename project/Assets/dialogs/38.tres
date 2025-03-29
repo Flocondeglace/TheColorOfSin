@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_bnf5b"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="2_x44jq"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_isrq4"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_qf5rq"]
+
+[resource]
+script = ExtResource("4_qf5rq")
+id = 38
+next = 39
+character = ExtResource("1_bnf5b")
+character_mood = "pyjama_timide_gauche"
+character_droit = ExtResource("2_x44jq")
+character_mood_droit = "droit_heureux"
+character_mood_centre = ""
+left_talker = false
+center_talker = false
+text = "Salut, moi c’est Eole j’ai remarqué que tu étais coincé donc je me suis dis que tu avais besoin d’aide."
+choices = Array[ExtResource("3_isrq4")]([])

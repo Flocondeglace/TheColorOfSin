@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=4 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="1_oknak"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_u0m8w"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_qms0u"]
+
+[resource]
+script = ExtResource("3_qms0u")
+id = 113
+next = 114
+character = ExtResource("1_oknak")
+character_mood = "explication"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "La magie « écho » liée aux esprits c’est ce qui m’a permis tout à l’heure de connaître ton prénom."
+choices = Array[ExtResource("2_u0m8w")]([])

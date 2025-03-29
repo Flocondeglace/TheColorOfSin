@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=6 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_wqd30"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="2_tt4ta"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="3_w3p7c"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_lkoc3"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_03jxa"]
+
+[resource]
+script = ExtResource("5_03jxa")
+id = 82
+next = 83
+character = ExtResource("1_wqd30")
+character_mood = "pyjama_panique_gauche"
+character_droit = ExtResource("3_w3p7c")
+character_mood_droit = "droite_neutre"
+character_centre = ExtResource("2_tt4ta")
+character_mood_centre = "droite_souriant"
+left_talker = false
+center_talker = false
+text = "Excusez-moi qui êtes vous?"
+choices = Array[ExtResource("4_lkoc3")]([])

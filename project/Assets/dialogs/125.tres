@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_ja1x4"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_x1yr4"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_7douv"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_680yj"]
+
+[sub_resource type="Resource" id="Resource_yjfk5"]
+script = ExtResource("3_7douv")
+action = 9
+params = ["Effet magique 1.PNG"]
+
+[sub_resource type="Resource" id="Resource_5snbq"]
+script = ExtResource("3_7douv")
+action = 1
+params = [126.0]
+
+[sub_resource type="Resource" id="Resource_ex6rh"]
+script = ExtResource("2_x1yr4")
+text = ""
+actions = Array[ExtResource("3_7douv")]([SubResource("Resource_yjfk5"), SubResource("Resource_5snbq")])
+
+[resource]
+script = ExtResource("4_680yj")
+id = 125
+next = 126
+character = ExtResource("1_ja1x4")
+character_mood = "pyjama_surprise"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "[i]Alors que je commence à paniquer, des paillettes apparaissent autour de moi.[/i]"
+choices = Array[ExtResource("2_x1yr4")]([SubResource("Resource_ex6rh")])

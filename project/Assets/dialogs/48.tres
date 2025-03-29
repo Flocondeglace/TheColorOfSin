@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_4kew3"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="2_ar4ih"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_i1pkb"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_o0awa"]
+
+[resource]
+script = ExtResource("4_o0awa")
+id = 48
+next = 49
+character = ExtResource("1_4kew3")
+character_mood = "pyjama_panique_gauche"
+character_droit = ExtResource("2_ar4ih")
+character_mood_droit = "droit_neutre"
+character_mood_centre = ""
+left_talker = false
+center_talker = false
+text = "Viens avec moi je t’amène voir un soigneur."
+choices = Array[ExtResource("3_i1pkb")]([])

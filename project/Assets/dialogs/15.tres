@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_aix1x"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_gaafm"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_h726s"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_8m0hj"]
+
+[sub_resource type="Resource" id="Resource_4i6qh"]
+script = ExtResource("3_h726s")
+action = 1
+params = [16.0]
+
+[sub_resource type="Resource" id="Resource_odtp6"]
+script = ExtResource("3_h726s")
+action = 5
+params = ["Papa"]
+
+[sub_resource type="Resource" id="Resource_sn8hg"]
+script = ExtResource("2_gaafm")
+text = "suivant"
+actions = Array[ExtResource("3_h726s")]([SubResource("Resource_4i6qh"), SubResource("Resource_odtp6")])
+
+[resource]
+script = ExtResource("4_8m0hj")
+id = 15
+next = 16
+character = ExtResource("1_aix1x")
+character_mood = "normal_heureuse"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "On sait que c’est pas toujours facile mais on est fière de toi!"
+choices = Array[ExtResource("2_gaafm")]([SubResource("Resource_sn8hg")])

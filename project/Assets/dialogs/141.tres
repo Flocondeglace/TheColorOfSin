@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_gh8sh"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="2_8dwgl"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_75lai"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_7t4vx"]
+
+[resource]
+script = ExtResource("4_7t4vx")
+id = 141
+next = 142
+character = ExtResource("1_gh8sh")
+character_mood = "pyjama_heureuse_gauche"
+character_droit = ExtResource("2_8dwgl")
+character_mood_droit = "droit_heureux"
+character_mood_centre = ""
+left_talker = false
+center_talker = false
+text = "A en voir ta tenue tu as intégré l’académie. Comment tu as fais?"
+choices = Array[ExtResource("3_75lai")]([])

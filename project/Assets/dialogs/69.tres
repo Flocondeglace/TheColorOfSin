@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=6 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_djkqf"]
+[ext_resource type="Resource" path="res://Assets/characters/Professeur.tres" id="2_eckus"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="3_7n7ne"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_oioxx"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_6fa5t"]
+
+[resource]
+script = ExtResource("5_6fa5t")
+id = 69
+next = 70
+character = ExtResource("1_djkqf")
+character_mood = "pyjama_intrigué_gauche"
+character_droit = ExtResource("3_7n7ne")
+character_mood_droit = "droit_inquiet"
+character_centre = ExtResource("2_eckus")
+character_mood_centre = "colere"
+left_talker = true
+center_talker = false
+text = "Qu’est-ce qui se passe quand les fils deviennent rouge?"
+choices = Array[ExtResource("4_oioxx")]([])

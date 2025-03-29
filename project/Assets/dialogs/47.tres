@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_4fi6l"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="2_c1i8t"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_d5cwy"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_oiavn"]
+
+[resource]
+script = ExtResource("4_oiavn")
+id = 47
+next = 48
+character = ExtResource("1_4fi6l")
+character_mood = "pyjama_panique_gauche"
+character_droit = ExtResource("2_c1i8t")
+character_mood_droit = "droit_inquiet"
+character_mood_centre = ""
+left_talker = false
+center_talker = false
+text = "C’est bizarre tout a l’air normal."
+choices = Array[ExtResource("3_d5cwy")]([])

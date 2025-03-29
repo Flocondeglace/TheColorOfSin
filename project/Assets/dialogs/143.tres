@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_uvx6i"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="2_q7iud"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_5tbt5"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_hd5ob"]
+
+[resource]
+script = ExtResource("4_hd5ob")
+id = 143
+next = 144
+character = ExtResource("1_uvx6i")
+character_mood = "pyjama_timide_gauche"
+character_droit = ExtResource("2_q7iud")
+character_mood_droit = "droit_heureux"
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "Je m’appelle Lucie."
+choices = Array[ExtResource("3_5tbt5")]([])

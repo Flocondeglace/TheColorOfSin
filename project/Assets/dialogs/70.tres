@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=6 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_nhihr"]
+[ext_resource type="Resource" path="res://Assets/characters/Professeur.tres" id="2_ne4fg"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="3_x4nq7"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_nru24"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_lgd33"]
+
+[resource]
+script = ExtResource("5_lgd33")
+id = 70
+next = 71
+character = ExtResource("1_nhihr")
+character_mood = "pyjama_intrigué_gauche"
+character_droit = ExtResource("3_x4nq7")
+character_mood_droit = "droit_inquiet"
+character_centre = ExtResource("2_ne4fg")
+character_mood_centre = "colere"
+left_talker = true
+center_talker = true
+text = "Vous n’êtes pas élèves, que faites-vous ici? J’appelle le principal !"
+choices = Array[ExtResource("4_nru24")]([])

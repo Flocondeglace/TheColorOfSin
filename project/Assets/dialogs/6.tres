@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=4 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_pb7xf"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_mvp7a"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_qrup4"]
+
+[resource]
+script = ExtResource("3_qrup4")
+id = 6
+next = 7
+character = ExtResource("1_pb7xf")
+character_mood = "normal_colère"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "Reprend toi Lucie!"
+choices = Array[ExtResource("2_mvp7a")]([])

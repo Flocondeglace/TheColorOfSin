@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=4 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_tixfe"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_c6mey"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_i2yoo"]
+
+[resource]
+script = ExtResource("3_i2yoo")
+id = 33
+next = 34
+character = ExtResource("1_tixfe")
+character_mood = "pyjama_panique"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "(Dicté par mon intinct de survie j’essaie de m’extirper de la foule qui est apparu devant moi comme par magie.)"
+choices = Array[ExtResource("2_c6mey")]([])

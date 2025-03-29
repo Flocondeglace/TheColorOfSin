@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_ff63s"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_xetpm"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_0rfb3"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_xpmmy"]
+
+[resource]
+script = ExtResource("4_xpmmy")
+id = 119
+next = 120
+character = ExtResource("1_ff63s")
+character_mood = "pyjama_panique_gauche"
+character_droit = ExtResource("2_xetpm")
+character_mood_droit = "droite_explication"
+character_mood_centre = ""
+left_talker = false
+center_talker = false
+text = "Ne t’en fais pas, tu n’as rien d’autre à faire que de te concentrer."
+choices = Array[ExtResource("3_0rfb3")]([])

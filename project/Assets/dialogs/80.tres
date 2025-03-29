@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=10 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_eh4cw"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="2_tgwry"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="3_fsl4x"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_amu6l"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="5_uyt3v"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="6_s0gnh"]
+
+[sub_resource type="Resource" id="Resource_fdw2o"]
+script = ExtResource("5_uyt3v")
+action = 4
+params = ["Foulle.PNG"]
+
+[sub_resource type="Resource" id="Resource_ysx0h"]
+script = ExtResource("5_uyt3v")
+action = 1
+params = [81.0]
+
+[sub_resource type="Resource" id="Resource_88ee8"]
+script = ExtResource("4_amu6l")
+text = ""
+actions = Array[ExtResource("5_uyt3v")]([SubResource("Resource_fdw2o"), SubResource("Resource_ysx0h")])
+
+[resource]
+script = ExtResource("6_s0gnh")
+id = 80
+next = 81
+character = ExtResource("1_eh4cw")
+character_mood = "pyjama_panique_gauche"
+character_droit = ExtResource("3_fsl4x")
+character_mood_droit = "droit_colere"
+character_centre = ExtResource("2_tgwry")
+character_mood_centre = "taquin"
+left_talker = true
+center_talker = true
+text = "une nouvelle?"
+choices = Array[ExtResource("4_amu6l")]([SubResource("Resource_88ee8")])

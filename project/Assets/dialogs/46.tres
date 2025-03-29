@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_q7bet"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="2_g5sqg"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_sxsr6"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_uam1j"]
+
+[resource]
+script = ExtResource("4_uam1j")
+id = 46
+next = 47
+character = ExtResource("1_q7bet")
+character_mood = "pyjama_surprise_gauche"
+character_droit = ExtResource("2_g5sqg")
+character_mood_droit = "magie"
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "(Qu’est ce qui ce passe là ?)"
+choices = Array[ExtResource("3_sxsr6")]([])

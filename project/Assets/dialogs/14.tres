@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_hcbn3"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_6nhsu"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_fdk1p"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_27ij1"]
+
+[sub_resource type="Resource" id="Resource_cntan"]
+script = ExtResource("3_fdk1p")
+action = 1
+params = [15.0]
+
+[sub_resource type="Resource" id="Resource_w38nq"]
+script = ExtResource("3_fdk1p")
+action = 5
+params = ["Maman"]
+
+[sub_resource type="Resource" id="Resource_tupdd"]
+script = ExtResource("2_6nhsu")
+text = ""
+actions = Array[ExtResource("3_fdk1p")]([SubResource("Resource_cntan"), SubResource("Resource_w38nq")])
+
+[resource]
+script = ExtResource("4_27ij1")
+id = 14
+next = 15
+character = ExtResource("1_hcbn3")
+character_mood = "normal_soupir"
+character_mood_droit = ""
+character_mood_centre = ""
+left_talker = true
+center_talker = false
+text = "Ça va… ça va…"
+choices = Array[ExtResource("2_6nhsu")]([SubResource("Resource_tupdd")])
