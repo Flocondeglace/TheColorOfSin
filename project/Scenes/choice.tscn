@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkcn5yfwycxs0"]
+
+[ext_resource type="Script" uid="uid://dsaojagsmyn58" path="res://choice.gd" id="1_h6sej"]
+
+[node name="Choice" type="Button"]
+custom_minimum_size = Vector2(50, 50)
+offset_right = 8.0
+offset_bottom = 8.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "default"
+script = ExtResource("1_h6sej")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

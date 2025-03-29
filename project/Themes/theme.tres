@@ -1,0 +1,12 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://80ujm46uplmf"]
+
+[ext_resource type="StyleBox" uid="uid://clwu01lm4a71c" path="res://Themes/flat_box_margin.tres" id="1_vejmh"]
+
+[resource]
+HBoxContainer/constants/separation = 32
+HSplitContainer/constants/separation = 32
+MarginContainer/constants/margin_bottom = 20
+MarginContainer/constants/margin_left = 20
+MarginContainer/constants/margin_right = 20
+MarginContainer/constants/margin_top = 20
+RichTextLabel/styles/normal = ExtResource("1_vejmh")

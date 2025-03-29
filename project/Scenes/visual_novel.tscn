@@ -1,0 +1,81 @@
+[gd_scene load_steps=5 format=3 uid="uid://voimtwk3bnc5"]
+
+[ext_resource type="Script" uid="uid://bvjg2abiukpjg" path="res://Scenes/menu.gd" id="1_audix"]
+[ext_resource type="PackedScene" uid="uid://ckc3nyh87hfps" path="res://Scenes/game.tscn" id="1_uwgei"]
+[ext_resource type="Texture2D" uid="uid://njwxh80f4sjy" path="res://Assets/The Color of Sin/ecran acceuil.jpg" id="2_wsgww"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hwkrf"]
+texture = ExtResource("2_wsgww")
+
+[node name="VisualNovel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Menu" type="Control" parent="." node_paths=PackedStringArray("first_selected_button")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_audix")
+first_selected_button = NodePath("Panel/CenterContainer/VBoxContainer/StartButton")
+
+[node name="Panel" type="Panel" parent="Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_hwkrf")
+
+[node name="CenterContainer" type="CenterContainer" parent="Menu/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 322.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/Panel/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 32
+
+[node name="MarginContainer" type="MarginContainer" parent="Menu/Panel/CenterContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/margin_bottom = 128
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Menu/Panel/CenterContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 72
+text = "The Color of Sin"
+fit_content = true
+autowrap_mode = 0
+
+[node name="StartButton" type="Button" parent="Menu/Panel/CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Débuter l'histoire !"
+
+[node name="LeftButton" type="Button" parent="Menu/Panel/CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Quitter :'("
+
+[node name="Game" parent="." instance=ExtResource("1_uwgei")]
+visible = false
+
+[connection signal="button_up" from="Menu/Panel/CenterContainer/VBoxContainer/StartButton" to="Menu" method="_on_start_button_button_up"]
+[connection signal="button_up" from="Menu/Panel/CenterContainer/VBoxContainer/LeftButton" to="Menu" method="quit"]
+[connection signal="end" from="Game" to="Menu" method="back_to_menu"]

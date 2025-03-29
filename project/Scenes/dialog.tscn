@@ -1,0 +1,93 @@
+[gd_scene load_steps=5 format=3 uid="uid://ctfdg7113fa48"]
+
+[ext_resource type="Script" uid="uid://dab1k0bj468el" path="res://Scripts/Dialog.gd" id="1_ni5fb"]
+[ext_resource type="Resource" uid="uid://dfrjoff45ivbg" path="res://Assets/characters/perso1.tres" id="2_a3ipn"]
+[ext_resource type="Theme" uid="uid://80ujm46uplmf" path="res://Themes/theme.tres" id="3_3g5uc"]
+[ext_resource type="Texture2D" uid="uid://bhbeqqyawhi1n" path="res://icon.svg" id="4_huh4a"]
+
+[node name="Character" type="Node2D" node_paths=PackedStringArray("sprite_gauche", "sprite_droit", "sprite_centre", "label", "dialog", "text_dialog", "background_dialog")]
+script = ExtResource("1_ni5fb")
+character_data = ExtResource("2_a3ipn")
+sprite_gauche = NodePath("SpritePersoGauche")
+sprite_droit = NodePath("SpritePersoDroit")
+sprite_centre = NodePath("SpritePersoCentre")
+label = NodePath("BackgroundDialog/MarginContainer/Dialog/Label")
+dialog = NodePath("BackgroundDialog/MarginContainer/Dialog")
+text_dialog = NodePath("BackgroundDialog/MarginContainer/Dialog/TextDialog")
+background_dialog = NodePath("BackgroundDialog")
+
+[node name="SpritePersoCentre" type="TextureRect" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 176.0
+offset_top = -506.0
+offset_right = 487.0
+offset_bottom = -195.0
+grow_horizontal = 2
+scale = Vector2(2.2, 2.2)
+size_flags_vertical = 3
+texture = ExtResource("4_huh4a")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="SpritePersoDroit" type="TextureRect" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 468.0
+offset_top = -480.0
+offset_right = 779.0
+offset_bottom = -169.0
+grow_horizontal = 2
+scale = Vector2(2.2, 2.2)
+size_flags_vertical = 3
+texture = ExtResource("4_huh4a")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="SpritePersoGauche" type="TextureRect" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -25.0
+offset_top = -479.0
+offset_right = 286.0
+offset_bottom = -168.0
+grow_horizontal = 2
+scale = Vector2(2.2, 2.2)
+size_flags_vertical = 3
+texture = ExtResource("4_huh4a")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="BackgroundDialog" type="ColorRect" parent="."]
+offset_right = 1147.0
+offset_bottom = 200.0
+size_flags_horizontal = 3
+color = Color(0.851686, 0.901689, 1, 0.392157)
+
+[node name="MarginContainer" type="MarginContainer" parent="BackgroundDialog"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_3g5uc")
+
+[node name="Dialog" type="VBoxContainer" parent="BackgroundDialog/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="BackgroundDialog/MarginContainer/Dialog"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Name"
+
+[node name="TextDialog" type="RichTextLabel" parent="BackgroundDialog/MarginContainer/Dialog"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "Texte intial pour tester."
