@@ -1,0 +1,13 @@
+{
+	"next":71,
+	"character":"Lucie",
+	"character_mood":"pyjama_Intrigué_gauche",
+	"character_centre":"Professeur",
+	"character_mood_centre":"Colere",
+	"character_droit":"Eole",
+	"character_mood_droit":"droit_Inquiet",
+	"text": "Vous n’êtes pas élèves, que faites-vous ici? J’appelle le principal !",
+	"center_talker":true,
+	"c":"#cest prof qui parle
+#disparition de la prof et Eole"
+}

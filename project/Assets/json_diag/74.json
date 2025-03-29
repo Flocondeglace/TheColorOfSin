@@ -1,0 +1,12 @@
+{
+	"next":75,
+	"character":"Professeur",
+	"character_mood":"Heureuse",
+	"character_droit":"Lucie",
+	"character_mood_droit":"",
+	"text": "[i]Le cours a continué jusqu’à la sonnerie et tous les élèves sortent[/i])",
+	"c":"#lucie qui parle meme si elle nest pas a lecran",
+	"left_talker":false,
+	"c":"#prof disparait et Lucie et Eole apparaissent"
+
+}

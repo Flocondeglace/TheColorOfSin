@@ -1,0 +1,11 @@
+{
+	"next":98,
+	"character":"Lucie",
+	"character_mood":"pyjama_Panique_gauche",
+	"character_centre":"Proviseur",
+	"character_mood_centre":"droite_Surprise",
+	"character_droit":"Neven",
+	"character_mood_droit":"droite_Souriant",
+	"text": "En effet c’est inhabituel… ",
+	"center_talker":true,
+}

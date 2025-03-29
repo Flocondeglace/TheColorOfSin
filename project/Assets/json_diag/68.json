@@ -1,0 +1,12 @@
+{
+	"next":69,
+	"character":"Lucie",
+	"character_mood":"pyjama_Neutre_gauche",
+	"character_centre":"Professeur",
+	"character_mood_centre":"Colere",
+	"character_droit":"Eole",
+	"character_mood_droit":"droit_Inquiet",
+	"text": "Tu fais quoi? ",
+	"c":"#c'est Eole qui parle",
+	"left_talker":false,
+}

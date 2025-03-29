@@ -1,0 +1,10 @@
+{
+	"next":118,
+	"character":"Proviseur",
+	"character_mood":"Explication",
+	"text": "Et la plus rare la magie « vision » liée au temps.",
+	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Vision.PNG"]},{"action":"go_to", "params":[118]}]}],
+	"c":"#ajout du motif Vision uniquement pendant ce dialogue
+#Lucie  reapparait apres dialogue et motif disparait"
+
+}

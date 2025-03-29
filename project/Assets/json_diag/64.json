@@ -1,0 +1,8 @@
+{
+	"next":65,
+	"character":"Lucie",
+	"character_mood":"pyjama_Intrigué",
+	"choices": [{"text":"Être curieuse", "actions":[{"action":"go_to", "params":[65]}]},{"text":"rester discrète", "actions":[{"action":"go_to", "params":[73]}]}],
+	"c":"#quand tu clique le symbole blanc s'active",
+	"c":"#quand tu clique le symbole rouge s'active",
+}

@@ -1,0 +1,10 @@
+{
+	"next":54,
+	"character":"Lucie",
+	"character_mood":"pyjama_Neutre_gauche",
+	"character_droit":"Eole",
+	"character_mood_droit":"droit_Colère",
+	"text": "Oh non déjà !",
+	"left_talker":false,
+	"commentaire":"#cest Eole qui parle"
+}

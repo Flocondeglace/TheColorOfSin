@@ -1,0 +1,8 @@
+{
+	"next":113,
+	"character":"Proviseur",
+	"character_mood":"Explication",
+	"text": "Celles des « flux » pour soigner. ",
+	"choices": [{"text":"", "actions":[{"action":"effect", "params":["echo.PNG"]},{"action":"go_to", "params":[113]}]}],
+	"commentaire":"#ajout du motif Flux uniquement pendant ce dialogue"
+}

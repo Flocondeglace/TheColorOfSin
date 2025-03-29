@@ -1,0 +1,11 @@
+{
+	"next":39,
+	"character":"Lucie",
+	"character_mood":"pyjama_Timide_gauche",
+	"character_droit":"Eole",
+	"character_mood_droit":"droit_Heureux",
+	"text": "Salut, moi c’est Eole j’ai remarqué que tu étais coincé donc je me suis dis que tu avais besoin d’aide.",
+	"left_talker":false,
+	"commentaire":"#cest Eole qui parle"
+
+}

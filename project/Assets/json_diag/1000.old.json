@@ -1,0 +1,7 @@
+{
+	"next":2,
+	"character":"Kirua",
+	"character_mood":"angry",
+	"text": "Dialog importé depuis json !",
+	"choices": [{"text":"choix 1 ", "actions":[{"action":"go_to", "params":[1]}]},{"text":"choix 2", "actions":[]}]
+}

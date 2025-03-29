@@ -1,0 +1,7 @@
+{
+	"next":13,
+	"character":"Lucie",
+	"character_mood":"normal_heureuse",
+	"text": "(Bon, j’ai des nouilles dans le placard, et j’ai fini mes devoirs. Je vais enfin pouvoir lire un peu!)",
+	"choices": [{"text":"suivant", "actions":[{"action":"go_to", "params":[13]},{"action":"phone", "params":["Papa"]}]}]
+}

@@ -1,0 +1,12 @@
+{
+	"next":83,
+	"character":"Lucie",
+	"character_mood":"pyjama_panique_gauche",
+	"character_droit":"Proviseur",
+	"character_mood_droit":"droite_Neutre",
+	"character_centre":"Neven",
+	"character_mood_centre":"droite_Souriant",
+	"text": "Excusez-moi qui êtes vous?",
+	"left_talker":false,
+	"c":"#prov et Neven disparaisse apres dialogue",
+}

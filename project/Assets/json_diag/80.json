@@ -1,0 +1,17 @@
+{
+	"next":81,
+	"character":"Lucie",
+	"character_mood":"pyjama_panique_gauche",
+	"character_droit":"Eole",
+	"character_mood_droit":"droit_Colere",
+	"character_centre":"Neven",
+	"character_mood_centre":"Taquin",
+	"text": "une nouvelle?",
+	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Foulle.PNG"]},{"action":"go_to", "params":[81]}]}],
+	"c":"#cest voix eleve qui parle qui parle",
+	"center_talker":true,
+	"c":"
+#apparition foulle
+#Eole disparait"
+
+}

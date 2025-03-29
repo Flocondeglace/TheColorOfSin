@@ -1,0 +1,7 @@
+{
+	"next":59,
+	"character":"Professeur",
+	"character_mood":"Heureuse",
+	"text": "C’est tout à fait ça Safia. Et dans ses savoirs, il y a l’un des plus mystérieux",
+	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Prophétie.PNG"]},{"action":"go_to", "params":[59]}]}],
+}

@@ -1,0 +1,12 @@
+{
+	"next":82,
+	"character":"Lucie",
+	"character_mood":"pyjama_panique_gauche",
+	"character_centre":"Proviseur",
+	"character_mood_centre":"droite_Neutre",
+	"character_droit":"Neven",
+	"character_mood_droit":"droite_Souriant",
+	"text": "une nouvelle… interessant…",
+	"left_talker":false,
+
+}

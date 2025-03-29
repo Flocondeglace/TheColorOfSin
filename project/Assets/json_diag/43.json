@@ -1,0 +1,10 @@
+{
+	"next":44,
+	"character":"Lucie",
+	"character_mood":"pyjama_Surprise_gauche",
+	"character_droit":"Eole",
+	"character_mood_droit":"droit_explication",
+	"text": "Euh à Elemis, c’est la capital de la magie…",
+	"left_talker":false,
+	"commentaire":"#cest Eole qui parle"
+}

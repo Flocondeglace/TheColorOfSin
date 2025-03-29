@@ -1,0 +1,7 @@
+{
+	"next":6,
+	"character":"Lucie",
+	"character_mood":"normal_soupir",
+	"text": "Encore une fois cette journée de cours fut un enfer. J’ai encore attiré l’attention… Je suis sûr d’avoir entendu des gens se moquer de mois…",
+	"choices": [{"text":"arrête d'y penser", "actions":[{"action":"go_to", "params":[6]}]},{"text":"se venger", "actions":[{"action":"go_to", "params":[8]}]}]
+}

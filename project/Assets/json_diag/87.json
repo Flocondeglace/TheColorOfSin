@@ -1,0 +1,12 @@
+{
+	"next":88,
+	"character":"Lucie",
+	"character_mood":"pyjama_Surprise_gauche",
+	"character_centre":"Proviseur",
+	"character_mood_centre":"droite_Neutre",
+	"character_droit":"Neven",
+	"character_mood_droit":"droite_Souriant",
+	"text": "C’est moi monsieur le proviseur, elle était perdue.",
+	"left_talker":false
+
+}

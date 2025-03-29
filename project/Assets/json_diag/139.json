@@ -1,0 +1,7 @@
+{
+	"next":140,
+	"character":"Lucie",
+	"character_mood":"pyjama_panique",
+	"text": "[i]Je crois...[/i]",
+	"choices": [{"text":"", "actions":[{"action":"black_melting"},{"action":"go_to", "params":[140]}, {"action":"change_background", "params":["Classe.JPG"]}]}]
+}

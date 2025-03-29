@@ -1,0 +1,7 @@
+{
+	"choices": [{"text":"", "actions":[{"action":"go_to", "params":[31]}]}],
+	"next":31,
+	"character":"Lucie",
+	"character_mood":"pyjama_Surprise",
+	"text": "Où suis je? Et qu’est-ce ce que c’est que…",	
+}

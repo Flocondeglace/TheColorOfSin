@@ -1,0 +1,8 @@
+{
+	"next":20,
+	"character":"Lucie",
+	"character_mood":"normal_Heureuse",
+	"text": "Bisous.",
+	"choices": [{"text":"", "actions":[{"action":"go_to", "params":[20]},{"action":"remove_phone"}]}],
+	"commentaire": "#Telephone disparait apres dialogue"
+}

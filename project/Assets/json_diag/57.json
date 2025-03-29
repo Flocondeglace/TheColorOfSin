@@ -1,0 +1,10 @@
+{
+	"next":58,
+	"character":"Safia",
+	"character_mood":"Neutre",
+	"character_droite":"Élève",
+	"character_mood_droite":"Neutre",
+	"text": "Roh la fayote!",
+	"commentaire": "#cest la voix d'autre eleve qui parle ici + apres dialogue safia disparait et prof apparait",
+	"left_talker":false,
+}

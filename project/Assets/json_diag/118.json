@@ -1,0 +1,9 @@
+{
+	"next":119,
+	"character":"Lucie",
+	"character_mood":"pyjama_panique_gauche",
+	"character_droit":"Proviseur",
+	"character_mood_droit":"droite_Explication",
+	"text": "Pour savoir quel est ton type de magie il existe un test Tu vas devoir aller au centre du cercle de cristal.",
+	"left_talker":false,
+}

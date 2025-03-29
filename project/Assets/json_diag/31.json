@@ -1,0 +1,8 @@
+{
+	"next":32,
+	"character":"Lucie",
+	"character_mood":"pyjama_Panique",
+	"text": "AAAAAAAAH!!!",
+	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Place_foule.jpg"]},{"action":"go_to", "params":[32]}]}]
+
+}

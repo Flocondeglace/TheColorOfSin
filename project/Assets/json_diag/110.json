@@ -1,0 +1,10 @@
+{
+	"next":111,
+	"character":"Lucie",
+	"character_mood":"pyjama_Neutre_gauche",
+	"character_droit":"Proviseur",
+	"character_mood_droit":"droite_Explication",
+	"text": "Ici la magie est omniprésente en chacun, elle se révèle vers la majorité et se sépare en cinq groupes. ",
+	"left_talker":false,
+	"choices": [{"text":"", "actions":[{"action":"effect", "params":["onde.PNG"]},{"action":"go_to", "params":[111]}]}],
+}

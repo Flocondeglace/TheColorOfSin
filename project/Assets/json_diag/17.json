@@ -1,0 +1,8 @@
+{
+	"next":18,
+	"character":"Lucie",
+	"character_mood":"normal_Heureuse",
+	"text": "Oui papa j’ai pas oublié",
+	"commentaire": "Telephone sur lecran",
+	"choices": [{"text":"", "actions":[{"action":"go_to", "params":[19]},{"action":"phone", "params":["Maman"]}]}]
+}

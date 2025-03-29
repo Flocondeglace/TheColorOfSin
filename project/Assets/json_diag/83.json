@@ -1,0 +1,10 @@
+{
+	"next":84,
+	"character":"Lucie",
+	"character_mood":"pyjama_panique",
+	"choices": [{"text":"Être vague", "actions":[{"action":"go_to", "params":[84]}]},{"text":"Rester silencieuse", "actions":[{"action":"go_to", "params":[90]}]}, {"text":"Tout déballer", "actions":[{"action":"go_to", "params":[95]}]}],
+	"c":"#quand tu clique le symbole rouge s'active",
+	"c":"#quand tu clique le symbole noir s'active",
+	"c":"#quand tu clique le symbole blanc s'active",
+	"c":"#Proviseur et Neven reaparaisse apres choix",
+}

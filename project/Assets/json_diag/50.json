@@ -1,0 +1,8 @@
+{
+	"next":51,
+	"character":"Lucie",
+	"character_mood":"pyjama_Intrigué_gauche",
+	"text": "(J’ai à peine le temps de réaliser se qui ce passe qu’il m’amène jusqu’à un portail.)",
+	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Classe.JPG"]},{"action":"go_to", "params":[51]}]}],
+	"commentaire":"#Lucie seul "
+}

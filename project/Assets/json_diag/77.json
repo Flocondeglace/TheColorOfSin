@@ -1,0 +1,11 @@
+{
+	"next":78,
+	"character":"Lucie",
+	"character_mood":"pyjama_Timide_gauche",
+	"character_droit":"Eole",
+	"character_mood_droit":"droit_Colere",
+	"character_centre":"Neven",
+	"character_mood_centre":"Souriant",
+	"text": "Je te connais pas toi. Qu’est-ce que tu fais là ?",
+	"center_talker":true,
+}

@@ -1,0 +1,10 @@
+{
+	"next":62,
+	"character":"Lucie",
+	"character_mood":"pyjama_Intrigué_gauche",
+	"character_droite":"Eole",
+	"character_mood_droite":"droit_Neutre",
+	"text": "Shut tu vas te faire remarquer… ",
+	"left_talker":false,
+	"c": "#Eole et Lucie disparaisse et Prof apparait"
+}

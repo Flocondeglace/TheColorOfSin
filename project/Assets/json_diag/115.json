@@ -1,0 +1,10 @@
+{
+	"next":116,
+	"character":"Lucie",
+	"character_mood":"pyjama_Neutre_gauche",
+	"character_droit":"Proviseur",
+	"character_mood_droit":"droite_Neutre",
+	"text": "Non je t’ai juste sondé.",
+	"left_talker":false,
+	"commentaire":"#Lucie disparait apres dialogue"
+}

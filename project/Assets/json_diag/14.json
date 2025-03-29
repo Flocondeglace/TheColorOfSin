@@ -1,0 +1,7 @@
+{
+	"next":15,
+	"character":"Lucie",
+	"character_mood":"normal_Soupir",
+	"text": "Ça va… ça va…",
+	"choices": [{"text":"", "actions":[{"action":"go_to", "params":[15]},{"action":"phone", "params":["Maman"]}]}]
+}

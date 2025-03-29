@@ -1,0 +1,11 @@
+{
+	"next":38,
+	"character":"Lucie",
+	"character_mood":"pyjama_Timide_gauche",
+	"character_droit":"Eole",
+	"character_mood_droit":"droit_Inquiet",
+	"text": "Oh euh je...",
+	"left_talker":false,
+	"commentaire": "#cest Lucie qui parle"
+
+}

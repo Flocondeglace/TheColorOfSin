@@ -1,0 +1,9 @@
+{
+	"next":105,
+	"character":"Lucie",
+	"character_mood":"pyjama_Neutre_gauche",
+	"character_droit":"Proviseur",
+	"character_mood_droit":"droite_Neutre",
+	"text": "[i]Je me mis à le suivre sans réfléchir sans doute de peur des représailles si je me montrais trop rebelle.[/i]",
+	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Salle cristaux.JPG"]},{"action":"go_to", "params":[105]}]}]
+}

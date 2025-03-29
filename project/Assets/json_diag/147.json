@@ -1,0 +1,13 @@
+{
+	"next":148,
+	"character":"Lucie",
+	"character_mood":"pyjama_Surprise_gauche",
+	"character_droite":"Eole",
+	"character_mood_droite":"droit_Explication",	
+	"character_centre":"Safia",
+	"character_mood_centre":"Intrigué",
+	"text": " Compliqué comment ?",
+	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["black"]},{"action":"go_to", "params":[148]}]}],
+	"commentaire":"#cest Safia qui parle #disparition des personnage apres dialogue +fond noir",
+	"center_talker":true,
+}

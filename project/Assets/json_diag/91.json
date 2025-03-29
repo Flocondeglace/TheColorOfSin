@@ -1,0 +1,11 @@
+{
+	"next":92,
+	"character":"Lucie",
+	"character_mood":"pyjama_panique_gauche",
+	"character_centre":"Proviseur",
+	"character_mood_centre":"droite_Colere",
+	"character_droit":"Neven",
+	"character_mood_droit":"droite_Souriant",
+	"text": "Vous ne voulez pas répondre… très bien alors ça ne vous dérange si je vous met à la porte.",
+	"center_talker":true,
+}

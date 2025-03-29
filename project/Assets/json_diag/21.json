@@ -1,0 +1,8 @@
+{
+	"next":22,
+	"character":"Lucie",
+	"character_mood":"normal_Heureuse",
+	"text": "Bon, il y a un livre qui m’attend!",
+	"choices": [{"text":"", "actions":[{"action":"go_to", "params":[22]},{"action":"black_melting"}, {"action":"change_background", "params":["Chambre nuit.jpg"]}]}],
+	"commentaire": "#fondue en noir"
+}

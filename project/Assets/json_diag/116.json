@@ -1,0 +1,9 @@
+{
+	"next":117,
+	"character":"Proviseur",
+	"character_mood":"Explication",
+	"text": "Il y a aussi la magie « zone » liée à l’espace.",
+	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Zone.PNG"]},{"action":"go_to", "params":[117]}]}],
+	"c":"#ajout du motif Zone uniquement pendant ce dialogue"
+
+}
