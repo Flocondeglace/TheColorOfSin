@@ -1,6 +1,6 @@
 extends Control
 
-@onready var game: Node2D = $"../Game"
+@onready var game: CanvasLayer = $"../Game"
 @export var first_selected_button : Button
 
 func _ready() -> void:

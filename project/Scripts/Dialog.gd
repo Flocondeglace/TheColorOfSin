@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 class_name Dialog
 
 #var STATE : Dictionary = {
@@ -24,6 +24,7 @@ class_name Dialog
 @export var sprite_centre: TextureRect
 @export var label: Label
 @export var dialog: VBoxContainer
+@export var choices: VBoxContainer
 @export var text_dialog: RichTextLabel
 @export var background_dialog : ColorRect
 
@@ -82,9 +83,9 @@ func update_character():
 		print_debug("Character Data missing")
 
 func remove_choices():
-	for c in dialog.get_children():
+	for c in choices.get_children():
 		if c.is_class("Button"):
-			dialog.remove_child(c)
+			choices.remove_child(c)
 
 func set_text_dialog(t:String):
 	text_dialog.text = t
@@ -94,6 +95,6 @@ func set_talker_name(t:String):
 
 func add_choice(text:String, actions:Array[Callable]):
 	var c : Choice = Choice.new(text, actions)
-	dialog.add_child(c)
+	choices.add_child(c)
 	if text == "":
 		c.self_modulate = Color(1,1,1,0)

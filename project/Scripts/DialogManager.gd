@@ -1,4 +1,4 @@
-extends Node2D
+extends CanvasLayer
 
 signal end
 @export var current_dialog_id : int

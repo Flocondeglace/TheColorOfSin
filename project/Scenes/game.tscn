@@ -1,9 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://ckc3nyh87hfps"]
+[gd_scene load_steps=12 format=3 uid="uid://ckc3nyh87hfps"]
 
 [ext_resource type="Script" uid="uid://c8vu7i3yrmnnq" path="res://Scripts/DialogManager.gd" id="1_erj4e"]
 [ext_resource type="PackedScene" uid="uid://ctfdg7113fa48" path="res://Scenes/dialog.tscn" id="2_qfmdu"]
 [ext_resource type="Texture2D" uid="uid://njwxh80f4sjy" path="res://Assets/The Color of Sin/ecran acceuil.jpg" id="2_wrm1d"]
 [ext_resource type="Texture2D" uid="uid://eory3qljun" path="res://Assets/The Color of Sin/Décors/Téléphone.png" id="4_3dryh"]
+
+[sub_resource type="Resource" id="Resource_3dryh"]
+metadata/__load_path__ = "res://Assets/characters/perso1.tres"
 
 [sub_resource type="Animation" id="Animation_ionbg"]
 length = 0.001
@@ -175,19 +178,45 @@ _data = {
 &"white_melting": SubResource("Animation_wowpa")
 }
 
-[node name="DialogManager" type="Node2D" node_paths=PackedStringArray("dialog", "background", "dialog_box", "centered_text_box", "effect_texture_rect")]
+[node name="DialogManager" type="CanvasLayer" node_paths=PackedStringArray("dialog", "background", "dialog_box", "centered_text_box", "effect_texture_rect")]
 script = ExtResource("1_erj4e")
 folder_dialog = "res://Assets/dialogs"
-dialog = NodePath("DialogBox/Dialog")
-background = NodePath("CanvasLayer/Background")
-dialog_box = NodePath("DialogBox")
-centered_text_box = NodePath("CanvasLayer/CenteredTextBox")
-effect_texture_rect = NodePath("CanvasLayer/Effect")
+dialog = NodePath("Dialog")
+background = NodePath("BlackMessage/Background")
+dialog_box = NodePath("Dialog")
+centered_text_box = NodePath("BlackMessage/CenteredTextBox")
+effect_texture_rect = NodePath("Effect")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
+[node name="Effect" type="TextureRect" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 556.0
+offset_top = 304.0
+offset_right = 596.0
+offset_bottom = 344.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="BlackMessage" type="CanvasLayer" parent="."]
 layer = -1
 
-[node name="Background" type="TextureRect" parent="CanvasLayer"]
+[node name="Background" type="TextureRect" parent="BlackMessage"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -196,7 +225,7 @@ grow_vertical = 2
 texture = ExtResource("2_wrm1d")
 expand_mode = 1
 
-[node name="CenteredTextBox" type="Control" parent="CanvasLayer"]
+[node name="CenteredTextBox" type="Control" parent="BlackMessage"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -204,7 +233,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/CenteredTextBox"]
+[node name="RichTextLabel" type="RichTextLabel" parent="BlackMessage/CenteredTextBox"]
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
@@ -216,53 +245,17 @@ bbcode_enabled = true
 text = "[center]Centered Text[/center]"
 fit_content = true
 
-[node name="CanvasModulate" type="CanvasModulate" parent="CanvasLayer"]
+[node name="Dialog" parent="." instance=ExtResource("2_qfmdu")]
+character_data = SubResource("Resource_3dryh")
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(1, 1, 1, 0)
-
-[node name="Effect" type="TextureRect" parent="CanvasLayer"]
+[node name="Phone" type="Sprite2D" parent="."]
 visible = false
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-
-[node name="DialogBox" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = 490.0
-offset_bottom = 490.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Dialog" parent="DialogBox" instance=ExtResource("2_qfmdu")]
-position = Vector2(0, -43)
-
-[node name="Phone" type="Sprite2D" parent="DialogBox"]
-visible = false
-position = Vector2(1037, -79)
+position = Vector2(1037, 411)
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("4_3dryh")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("../DialogBox/Phone")
+root_node = NodePath("../Phone")
 libraries = {
 &"": SubResource("AnimationLibrary_gl4vm")
 }

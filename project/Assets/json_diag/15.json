@@ -4,5 +4,5 @@
 	"character_mood":"normal_heureuse",
 	"text": "On sait que c’est pas toujours facile mais on est fière de toi!",
 	"commentaire" : "cest la maman qui parle +Telephone sur lecran",
-	"choices": [{"text":"suivant", "actions":[{"action":"go_to", "params":[16]},{"action":"phone", "params":["Papa"]}]}]
+	"choices": [{"text":"", "actions":[{"action":"go_to", "params":[16]},{"action":"phone", "params":["Papa"]}]}]
 }
