@@ -3,10 +3,14 @@
 [ext_resource type="StyleBox" uid="uid://clwu01lm4a71c" path="res://Themes/flat_box_margin.tres" id="1_vejmh"]
 
 [resource]
+Button/font_sizes/font_size = 20
 HBoxContainer/constants/separation = 32
 HSplitContainer/constants/separation = 32
+Label/font_sizes/font_size = 20
 MarginContainer/constants/margin_bottom = 20
 MarginContainer/constants/margin_left = 20
 MarginContainer/constants/margin_right = 20
 MarginContainer/constants/margin_top = 20
+RichTextLabel/font_sizes/italics_font_size = 20
+RichTextLabel/font_sizes/normal_font_size = 20
 RichTextLabel/styles/normal = ExtResource("1_vejmh")
