@@ -2,6 +2,8 @@
 	"next":41,
 	"character":"Lucie",
 	"character_mood":"pyjama_surprise_gauche",
-	"text": "Quoi? (Oh non… je suis encore en pyjama la honte!)",
+	"character_droit":"Eole",
+	"character_mood_droit":"droit_Heureux",
+	"text": "Quoi ? [i]Oh non... je suis encore en pyjama, la honte ![/i]",
 	"commentaire": "#Lucie seul a lecran"
 }

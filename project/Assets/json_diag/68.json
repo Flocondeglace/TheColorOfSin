@@ -6,7 +6,7 @@
 	"character_mood_centre":"Colere",
 	"character_droit":"Eole",
 	"character_mood_droit":"droit_Inquiet",
-	"text": "Tu fais quoi? ",
+	"text": "Tu fais quoi ? ",
 	"c":"#c'est Eole qui parle",
 	"left_talker":false,
 }

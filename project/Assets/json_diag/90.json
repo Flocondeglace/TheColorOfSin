@@ -1,12 +1,12 @@
 {
 	"next":91,
 	"character":"Lucie",
-	"character_mood":"pyjama_gauche_Neutre",
-	"character_centre":"Proviseur",
-	"character_mood_centre":"droite_Colere",
-	"character_droit":"Neven",
-	"character_mood_droit":"droite_Souriant",
-	"text": "…",
+	"character_mood":"pyjama_Neutre_gauche",
+	"character_droit":"Proviseur",
+	"character_mood_droit":"droite_Colere",
+	"character_centre":"Neven",
+	"character_mood_centre":"droite_Souriant",
+	"text": "...",
 
 
 }

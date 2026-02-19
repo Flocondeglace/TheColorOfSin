@@ -1,7 +1,7 @@
 {
 	"next":123,
-	"character":"Lucie",
-	"character_mood":"pyjama_panique",
-	"text": "[i]Je m’installe au centre des magnifiques cristaux, mes jambes tremblent, mais je n’ai pas d’autres choix que de faire ce qu’il me dit. Je ne connais rien à ce monde et je suis totalement perdue.[/i]",
-	
+	"character_centre":"Lucie",
+	"character_mood_centre":"pyjama_panique",
+	"text": "[i]Je m’installe au centre des magnifiques cristaux, mes jambes tremblent, mais je n’ai pas d’autre choix que de faire ce qu’il me dit. Je ne connais rien à ce monde et je suis totalement perdue.[/i]",
+	"center_talker":true,
 }

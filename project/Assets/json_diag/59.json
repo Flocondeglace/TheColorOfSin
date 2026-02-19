@@ -2,8 +2,8 @@
 	"next":60,
 	"character":"Professeur",
 	"character_mood":"Heureuse",
-	"text": "C’est la prophétie.",
-	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Classe.JPG"]},{"action":"go_to", "params":[60]}]}],
+	"text": "La prophétie !",
+	"choices": [{"text":"", "actions":[{"action":"hide_object"},{"action":"go_to", "params":[60]}]}],
 	"c":"#disparition prophetie apres dialoge
 #prof disparait et Eole et Lucie apparaissent apres dialogue"
 }

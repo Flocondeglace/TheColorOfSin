@@ -2,11 +2,9 @@
 	"next":97,
 	"character":"Lucie",
 	"character_mood":"pyjama_Panique_gauche",
-	"character_centre":"Proviseur",
-	"character_mood_centre":"droit_Surprise",
-	"character_droit":"Neven",
-	"character_mood_droit":"droite_Souriant",
-	"text": "Puis il y a eu une ombre et la POUF disparue à nouveau. Au final j'ai atterri là et Eole m’a aidé mais je comprends rien à ce qui se passe et où je suis...",
-
-
+	"character_droit":"Proviseur",
+	"character_mood_droit":"droite_Surprise",
+	"character_centre":"Neven",
+	"character_mood_centre":"droite_Souriant",
+	"text": "Puis il y a eu une ombre et là POUF !!! Disparue à nouveau ! Au final j'ai atterri là et Eole m’a aidé, mais je comprends rien à ce qui se passe ni où je suis...",
 }

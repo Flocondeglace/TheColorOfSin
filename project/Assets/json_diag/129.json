@@ -1,8 +1,9 @@
 {
 	"next":130,
-	"character":"Proviseur",
-	"character_mood":"droite_Surprise",
-	"text": "Wow… là c’est sur elle a bien des pouvoirs.",
+	"character_droit":"Proviseur",
+	"character_mood_droit":"droite_Surprise",
+	"text": "Wow... Là, c’est sûr, elle a bien des pouvoirs.",
 	"c":"#personnage revienne a l'echelle normal
-#Lucie reapparait apres dialogue"
+#Lucie reapparait apres dialogue",
+"left_talker":false
 }

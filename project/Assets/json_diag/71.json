@@ -2,8 +2,8 @@
 	"next":72,
 	"character":"Lucie",
 	"character_mood":"pyjama_Timide",
-	"text": "Non… je…",
-	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Foulle.PNG"]},{"action":"go_to", "params":[72]}]}],
+	"text": "Non... je...",
+	"choices": [{"text":"", "actions":[{"action":"add_foule"},{"action":"go_to", "params":[72]}]}],
 	"c":"#apparition proviseur et Neven
 #apparition foulle"
 }

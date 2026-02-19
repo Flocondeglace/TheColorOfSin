@@ -1,7 +1,8 @@
 {
 	"next":77,
-	"character":"Neven",
-	"character_mood":"Souriant",
+	"character_centre":"Neven",
+	"character_mood_centre":"Souriant",
 	"text": "Hé, salut.",
-	"c":"#apparition Lucie et Eole apres dialogue"
+	"c":"#apparition Lucie et Eole apres dialogue",
+	"center_talker":true
 }

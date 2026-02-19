@@ -2,6 +2,6 @@
 	"next":28,
 	"character":"Lucie",
 	"character_mood":"pyjama_Surprise",
-	"text": "(Plus je m’approche de lui plus il devient rouge. J'arrive devant mon armoire je prend mon courage à 2 mains et j’ouvre d’un coup mon armoire)",
+	"text": "[i]Plus je m’approche de lui, plus il devient rouge. J'arrive devant mon armoire, je prend mon courage à deux mains et je l’ouvre d’un coup.[/i]",
 	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Chambre nuit fil ouvert.jpg"]},{"action":"go_to", "params":[28]}]}]
 }

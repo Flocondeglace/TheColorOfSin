@@ -1,8 +1,11 @@
 {
 	"next":112,
-	"character":"Proviseur",
-	"character_mood":"Explication",
+	"character":"Lucie",
+	"character_mood":"pyjama_Intrigué_gauche",
+	"character_droit":"Proviseur",
+	"character_mood_droit":"Explication",
 	"text": "La magie des « ondes » qui permet de protéger. ",
-	"choices": [{"text":"", "actions":[{"action":"effect", "params":["flux.PNG"]},{"action":"go_to", "params":[112]}]}],
-	"commentaire":"#ajout du motif onde uniquement pendant ce dialogue"
+	"choices": [{"text":"", "actions":[{"action":"plot_object", "params":["flux.PNG", "magie"]},{"action":"go_to", "params":[112]}]}],
+	"commentaire":"#ajout du motif onde uniquement pendant ce dialogue",
+	"left_talker":false
 }

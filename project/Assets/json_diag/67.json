@@ -2,9 +2,9 @@
 	"next":68,
 	"character":"Lucie",
 	"character_mood":"pyjama_Intrigué_gauche",
-	"character_droit":"Professeur",
-	"character_mood_droit":"Colere",
-	"text": "Excusez moi vous êtes…",
-	"left_talker":false,
+	"character_centre":"Professeur",
+	"character_mood_centre":"Colere",
+	"text": "Excusez-moi, vous êtes... ?",
+	"center_talker":true,
 	"c":"#apparition Eole",
 }

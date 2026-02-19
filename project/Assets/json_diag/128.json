@@ -1,8 +1,9 @@
 {
 	"next":129,
-	"character":"Lucie",
-	"character_mood":"pyjama_Soupir",
+	"character_centre":"Lucie",
+	"character_mood_centre":"pyjama_Soupir",
 	"text": "Tout c'est enfin arrêté.",
-	"c":"#dezoom Lucie(pied)
-#proviseur apparait apres dialogue et Lucie disparait"	
+	"c":"#dezoom Lucie(pied)#proviseur apparait apres dialogue et Lucie disparait",
+	"choices": [{"text":"", "actions":[{"action":"hide_object", "params":["Effet magique 1.PNG"]},{"action":"go_to", "params":[129]}]}],
+	"center_talker":true,
 }

@@ -1,8 +1,12 @@
 {
 	"next":114,
-	"character":"Proviseur",
-	"character_mood":"Explication",
-	"text": "La magie « écho » liée aux esprits c’est ce qui m’a permis tout à l’heure de connaître ton prénom.",
+	"character":"Lucie",
+	"character_mood":"pyjama_Intrigué_gauche",
+	"character_droit":"Proviseur",
+	"character_mood_droit":"Explication",
+	"text": "La magie « écho », liée aux esprits, c’est celle qui m’a permis tout à l’heure de connaître ton prénom.",
 	"commentaire":"#ajout du motif Echo uniquement pendant ce dialogue
-#apparition de Lucie apres le dialogue et motif disparait"
+#apparition de Lucie apres le dialogue et motif disparait",
+"choices": [{"text":"", "actions":[{"action":"hide_object", "params":["echo.PNG","magie"]},{"action":"go_to", "params":[114]}]}],
+	"left_talker":false
 }

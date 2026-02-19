@@ -2,6 +2,7 @@
 	"next":35,
 	"character":"Lucie",
 	"character_mood":"pyjama_Surprise",
-	"text": "(C’est à ce moment que sentit une main m’attraper le poignée et me tirer dans un coin plus calme.)",
+	"text": "[i]C’est à ce moment que je sentis une main m’attraper le poignet et me tirer dans un coin plus calme.[/i]",
+	"choices": [{"text":"", "actions":[{"action":"remove_foule"},{"action":"go_to", "params":[35]}]}],
 	"commentaire":"#disparition de la foulle"
 }

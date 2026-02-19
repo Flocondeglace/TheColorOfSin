@@ -2,11 +2,11 @@
 	"next":100,
 	"character":"Lucie",
 	"character_mood":"pyjama_Intrigué_gauche",
-	"character_centre":"Proviseur",
-	"character_mood_centre":"droite_Surprise",
-	"character_droit":"Neven",
-	"character_mood_droit":"droite_Souriant",
-	"text": "Je l’ai trouvé… singulière que pensez vous de lui faire passer LE test?",
-	"left_talker":false,
+	"character_droit":"Proviseur",
+	"character_mood_droit":"droite_Surprise",
+	"character_centre":"Neven",
+	"character_mood_centre":"droite_Souriant",
+	"text": "Je l’ai trouvée... singulière, que pensez vous de lui faire passer [i]LE[/i] test ?",
+	"center_talker":true,
 
 }

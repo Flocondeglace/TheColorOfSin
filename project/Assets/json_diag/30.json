@@ -3,5 +3,6 @@
 	"next":31,
 	"character":"Lucie",
 	"character_mood":"pyjama_Surprise",
-	"text": "Où suis je? Et qu’est-ce ce que c’est que…",	
+	"text": "Où suis-je ? Et qu’est-ce ce que c’est que...",	
+	"choices": [{"text":"", "actions":[{"action":"plot_object","params":["Méchante.PNG"]},{"action":"go_to", "params":[31]}]}]
 }

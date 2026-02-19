@@ -1,8 +1,9 @@
 {
 	"next":126,
-	"character":"Lucie",
-	"character_mood":"pyjama_Surprise",
+	"character_centre":"Lucie",
+	"character_mood_centre":"pyjama_Surprise",
 	"text": "[i]Alors que je commence à paniquer, des paillettes apparaissent autour de moi.[/i]",
-	"choices": [{"text":"", "actions":[{"action":"effect", "params":["Effet magique 1.PNG"]},{"action":"go_to", "params":[126]}]}],
-	"c":"#ajout effet magique 1 uniquement pendant ce dialogue"
+	"choices": [{"text":"", "actions":[{"action":"plot_object", "params":["Effet magique 1.PNG"]},{"action":"go_to", "params":[126]}]}],
+	"c":"#ajout effet magique 1 uniquement pendant ce dialogue",
+	"center_talker":true,
 }

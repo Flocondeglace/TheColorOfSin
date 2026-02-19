@@ -2,11 +2,13 @@
 	"next":103,
 	"character":"Lucie",
 	"character_mood":"pyjama_Neutre_gauche",
-	"character_center":"Proviseur",
-	"character_mood_center":"droite_Neutre",
-	"character_droit":"Neven",
-	"character_mood_droit":"droite_Souriant",
-	"text": "Merci Neven tu peux retourner en cours.",
-	"center_talker":true,
-	"commentaire":"#Neven disparait"
+	"character_droit":"Proviseur",
+	"character_mood_droit":"droite_Neutre",
+	"character_centre":"Neven",
+	"character_mood_centre":"droite_Souriant",
+	"text": "Merci Neven, tu peux retourner en cours.",
+	"left_talker":false
+	,
+	"commentaire":"#Neven disparait",
+	"choices": [{"text":"", "actions":[{"action":"remove_foule"},{"action":"go_to", "params":[103]}]}]
 }

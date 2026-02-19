@@ -3,5 +3,5 @@
 	"character":"Lucie",
 	"character_mood":"pyjama_Intrigué",
 	"text": "C’est quoi ça ?",
-	"choices": [{"text":"Je verrait ca demain", "actions":[{"action":"change_background", "params":["black"]},{"action":"go_to", "params":[25]}]},{"text":"Aller voir", "actions":[{"action":"go_to", "params":[26]}]}]
+	"choices": [{"text":"Je verrais ça demain", "actions":[{"action":"change_background", "params":["black"]},{"action":"go_to", "params":[25]}]},{"text":"Aller voir", "actions":[{"action":"go_to", "params":[26]}]}]
 }

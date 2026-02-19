@@ -4,7 +4,8 @@
 	"character_mood":"pyjama_Neutre_gauche",
 	"character_droit":"Proviseur",
 	"character_mood_droit":"droite_Neutre",
-	"text": "Non je t’ai juste sondé.",
+	"text": "Non, je t’ai juste sondé.",
 	"left_talker":false,
-	"commentaire":"#Lucie disparait apres dialogue"
+	"commentaire":"#Lucie disparait apres dialogue",
+	"choices": [{"text":"", "actions":[{"action":"plot_object", "params":["Zone.PNG","magie"]},{"action":"go_to", "params":[116]}]}],
 }

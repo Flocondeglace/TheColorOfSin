@@ -2,7 +2,7 @@
 	"next":10,
 	"character":"Lucie",
 	"character_mood":"normal_heureuse",
-	"text": "J’ai tellement hâte de jeter dans mon lit!",
+	"text": "J’ai tellement hâte de me jeter dans mon lit !",
 	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Chambre.jpg"]},{"action":"go_to", "params":[10]}]}]
 
 	

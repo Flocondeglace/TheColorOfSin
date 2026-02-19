@@ -1,10 +1,10 @@
 {
 	"next":146,
 	"character":"Lucie",
-	"character_mood":"pyjama_Heureuse_gauche",
+	"character_mood":"ecole_Heureuse",
 	"character_droit":"Eole",
 	"character_mood_droit":"droit_Explication",
-	"text": "Tu es de quel type ?",
+	"text": "De quel type es-tu ?",
 	"left_talker":false,
 
 }

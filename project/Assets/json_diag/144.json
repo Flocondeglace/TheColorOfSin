@@ -1,9 +1,9 @@
 {
 	"next":145,
 	"character":"Lucie",
-	"character_mood":"pyjama_Heureuse_gauche",	
+	"character_mood":"ecole_Heureuse",	
 	"character_droit":"Eole",
 	"character_mood_droit":"droit_Heureux",
-	"text": "Enchanté Lucie! Si tu es passé directement en 2ème année c’est que tu as déjà débloqué ton pouvoir.",
+	"text": "Enchanté Lucie ! Si tu es passée directement en deuxième année, c’est que tu as déjà débloqué ton pouvoir.",
 	"left_talker":false,
 }

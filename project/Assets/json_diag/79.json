@@ -1,11 +1,13 @@
 {
-	"next":80,
+	"next":81,
 	"character":"Lucie",
-	"character_mood":"pyjama_Timide_gauche",
+	"character_mood":"pyjama_Timide",
 	"character_droit":"Eole",
 	"character_mood_droit":"droit_Colere",
 	"character_centre":"Neven",
 	"character_mood_centre":"Taquin",
-	"text": "Du calme, on peut bien discuter. Une nouvelle personne aussi… -particulière ça n'arrive pas tout les jours.",
+	"text": "Du calme, on peut bien discuter. Une nouvelle personne aussi... [i]<<particulière>>[/i] ça n'arrive pas tous les jours.",
 	"center_talker":true,
+	"choices": [{"text":"", "actions":[{"action":"add_foule"},{"action":"go_to", "params":[81]}]}],
+	
 }

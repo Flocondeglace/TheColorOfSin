@@ -4,7 +4,7 @@
 	"character_mood":"pyjama_panique_gauche",
 	"character_droit":"Eole",
 	"character_mood_droit":"droit_Neutre",
-	"text": "Viens avec moi je t’amène voir un soigneur.",
+	"text": "Viens avec moi. Je t’amène voir un soigneur.",
 	"left_talker":false,
 	"commentaire":"#cest Eole qui parle"
 }

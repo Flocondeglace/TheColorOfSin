@@ -2,8 +2,8 @@
 	"next":82,
 	"character":"Lucie",
 	"character_mood":"pyjama_panique_gauche",
-	"character_droit":"Neven",
-	"character_mood_droit":"Souriant",
-	"text": "(En un claquement de doigts une foule me sépara de Eole.)",
+	"character_centre":"Neven",
+	"character_mood_centre":"Souriant",
+	"text": "[i]En un claquement de doigts une foule me sépara de Eole.[/i]",
 	"c":"#principal apparait",
 }

@@ -1,10 +1,10 @@
 {
-	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Zoom portail.JPG"]},{"action":"go_to", "params":[50]}]}],
+	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Place zoom.jpg"]},{"action":"go_to", "params":[50]}]}],
 	"next":50,
 	"character":"Lucie",
 	"character_mood":"pyjama_Surprise_gauche",
 	"character_droit":"Eole",
 	"character_mood_droit":"droit_Neutre",
-	"text": "Attend…",
+	"text": "Attend...",
 	"commentaire":"#cest Lucie qui parle "
 }

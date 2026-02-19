@@ -1,7 +1,23 @@
 {	
 	"next":-1,
 	"text": " Fin du prologue",
-	"text": " Merci d’avoir joué à « The Color of Sin » en espérant que cela vous a plus.",
+	"text": " Merci d’avoir joué à « The Color of Sin » en espérant que cela vous ait plu !
+	
+	
+	
+	Crédits :
+		Histoire et personnages : Dominika & Ely
+		Décors : Dominika, Ely & Neven
+		Programmation : Floriane (aka Flocondeglace)
+		
+		musiques utilisées : 
+			- monde humain : https://youtu.be/cDkiKKejSsg?si=1Xxbk1iNOT-qu2yU
+			- autre monde : https://youtu.be/WBvNKTktZpo?si=BAoY_X9BeC2tGlk3
+	
+	
+	
+	À bientôt pour la suite ;)
+	",
 	"commentaire":"#apparition titre en haut plus message de fin decouplé en 2
 #bouton pour rediriger vers ecran d'acceuil"
 }

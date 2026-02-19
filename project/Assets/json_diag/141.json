@@ -1,9 +1,9 @@
 {
 	"next":142,
 	"character":"Lucie",
-	"character_mood":"pyjama_Heureuse_gauche",
+	"character_mood":"ecole_Heureuse",
 	"character_droit":"Eole",
 	"character_mood_droit":"droit_Heureux",
-	"text": "A en voir ta tenue tu as intégré l’académie. Comment tu as fais?",
+	"text": "À en voir ta tenue, tu as intégré l’académie. Comment as-tu fait ?",
 	"left_talker":false
 }

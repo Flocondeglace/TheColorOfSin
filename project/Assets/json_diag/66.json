@@ -2,7 +2,7 @@
 	"next":67,
 	"character":"Lucie",
 	"character_mood":"pyjama_Intrigué_gauche",
-	"character_droit":"Professeur",
-	"character_mood_droit":"Colere",
-	"text": "Ça veut dire quoi d’après vous « portez le poids des fils »? ",
+	"character_centre":"Professeur",
+	"character_mood_centre":"Colere",
+	"text": "D'après vous, que veut dire « portez le poids des fils » ? ",
 }

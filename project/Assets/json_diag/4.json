@@ -1,5 +1,5 @@
 {
 	"next":5,
-	"text": "Faites vos choix en suivant votre cœur.",
-	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Ruelle.JPG"]},{"action":"go_to", "params":[5]}]}]
+	"text": "Faites vos choix en suivant votre cœur !",
+	"choices": [{"text":"", "actions":[{"action":"change_music", "params":["first.mp3"]},{"action":"change_background", "params":["Ruelle.JPG"]},{"action":"go_to", "params":[5]}]}]
 }

@@ -2,6 +2,6 @@
 	"next":24,
 	"character":"Lucie",
 	"character_mood":"pyjama_Surprise",
-	"text": "(Oh mince je me suis endormi en lisant! Je savais que j’aurais du m’arrêter quand il était 2h du matin.)",
+	"text": "[i]Oh mince je me suis endormie en lisant ! Je savais que j’aurais dû m’arrêter quand il était 2h du matin. [/i]",
 	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Chambre nuit fil.jpg"]},{"action":"go_to", "params":[24]}]}]
 }

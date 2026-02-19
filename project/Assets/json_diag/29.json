@@ -2,8 +2,7 @@
 	"next":30,
 	"character":"Lucie",
 	"character_mood":"pyjama_Intrigué",
-	"text": "(Sans savoir pourquoi je me senti attirée par ce fils et tend ma main jusqu’à l’effleurer.)",
-	"choices": [{"text":"", "actions":[{"action":"white_melting"}, {"action":"change_background", "params":["Entité .JPG"]},{"action":"go_to", "params":[30]}]}]
-
+	"text": "[i]Sans savoir pourquoi, je me sens attirée par ce fil et je tend ma main jusqu’à l’effleurer.[/i]",
+	"choices": [{"text":"", "actions":[{"action":"change_music", "params":["none"]},{"action":"white_melting"}, {"action":"change_background", "params":["Entité .JPG"]},{"action":"go_to", "params":[30]}]}]
 	
 }

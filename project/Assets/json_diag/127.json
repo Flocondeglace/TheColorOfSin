@@ -1,10 +1,11 @@
 {
 	"next":128,
-	"character":"Lucie",
-	"character_mood":"pyjama_Panique",
-	"text": "[i]Je ne comprends rien à ce qui se passe. Toute cette lumière, ses bruits.[/i]",
-	"choices": [{"text":"", "actions":[{"action":"effect", "params":["Effet magique 3.PNG"]},{"action":"go_to", "params":[128]}]}],
+	"character_centre":"Lucie",
+	"character_mood_centre":"pyjama_Panique",
+	"text": "[i]Je ne comprends rien à ce qui se passe. Toute cette lumière, ces bruits.[/i]",
+	"choices": [{"text":"", "actions":[{"action":"plot_object", "params":["Effet magique 3.PNG"]},{"action":"go_to", "params":[128]}]}],
 	"c":"#ajout du motif Vision uniquement pendant ce dialogue
 #dezoom Lucie(pied)
-#effet magique disparait disparait "
+#effet magique disparait disparait ",
+"center_talker":true,
 }

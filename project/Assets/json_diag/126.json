@@ -1,9 +1,10 @@
 {
 	"next":127,
-	"character":"Lucie",
-	"character_mood":"pyjama_Surprise",
+	"character_centre":"Lucie",
+	"character_mood_centre":"pyjama_Surprise",
 	"text": "[i]les cristaux clignotent, c’est normal ? Et c'est moi ou je commence à flotter dans les airs là ?[/i]",
-	"choices": [{"text":"", "actions":[{"action":"effect", "params":["Effet magique 2.PNG"]},{"action":"go_to", "params":[127]}]}],
+	"choices": [{"text":"", "actions":[{"action":"plot_object", "params":["Effet magique 2.PNG"]},{"action":"go_to", "params":[127]}]}],
 	"c":"#ajout du motif Vision uniquement pendant ce dialogue
-#dezoom Lucie(molet)"
+#dezoom Lucie(molet)",
+"center_talker":true,
 }

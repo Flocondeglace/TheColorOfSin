@@ -2,11 +2,11 @@
 	"next":86,
 	"character":"Lucie",
 	"character_mood":"pyjama_Neutre_gauche",
-	"character_centre":"Proviseur",
-	"character_mood_centre":"droite_Neutre",
-	"character_droit":"Neven",
-	"character_mood_droit":"droite_Souriant",
-	"text": "Qui donc?",
-	"center_talker":true,
+	"character_droit":"Proviseur",
+	"character_mood_droit":"droite_Neutre",
+	"character_centre":"Neven",
+	"character_mood_centre":"droite_Souriant",
+	"text": "Qui donc ?",
+	"left_talker":false,
 
 }

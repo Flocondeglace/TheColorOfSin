@@ -2,7 +2,6 @@
 	"next":32,
 	"character":"Lucie",
 	"character_mood":"pyjama_Panique",
-	"text": "AAAAAAAAH!!!",
-	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Place_foule.jpg"]},{"action":"go_to", "params":[32]}]}]
-
+	"text": "AAAAAAAAH !!!",
+	"choices": [{"text":"", "actions":[{"action":"change_music", "params":["second.mp3"]},{"action":"hide_object", "params":["Méchante.PNG"]},{"action":"add_foule"},{"action":"change_background", "params":["Place.jpg"]},{"action":"go_to", "params":[32]}]}]
 }

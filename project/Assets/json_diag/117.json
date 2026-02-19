@@ -1,10 +1,13 @@
 {
 	"next":118,
-	"character":"Proviseur",
-	"character_mood":"Explication",
-	"text": "Et la plus rare la magie « vision » liée au temps.",
-	"choices": [{"text":"", "actions":[{"action":"change_background", "params":["Vision.PNG"]},{"action":"go_to", "params":[118]}]}],
+	"character":"Lucie",
+	"character_mood":"pyjama_Intrigué_gauche",
+	"character_droit":"Proviseur",
+	"character_mood_droit":"Explication",
+	"text": "Et la plus rare la magie de « vision » liée au temps.",
 	"c":"#ajout du motif Vision uniquement pendant ce dialogue
-#Lucie  reapparait apres dialogue et motif disparait"
+#Lucie  reapparait apres dialogue et motif disparait",
+"choices": [{"text":"", "actions":[{"action":"hide_object", "params":["Vision.PNG","magie"]},{"action":"go_to", "params":[118]}]}],
+"left_talker":false
 
 }
