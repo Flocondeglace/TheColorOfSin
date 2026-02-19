@@ -1,12 +1,205 @@
-[gd_scene load_steps=6 format=3 uid="uid://ctfdg7113fa48"]
+[gd_scene load_steps=19 format=3 uid="uid://ctfdg7113fa48"]
 
 [ext_resource type="Script" uid="uid://dab1k0bj468el" path="res://Scripts/Dialog.gd" id="1_ni5fb"]
-[ext_resource type="Resource" uid="uid://brk8x3nghbi6d" path="res://Assets/characters/Lucie.tres" id="2_u40lh"]
 [ext_resource type="Theme" uid="uid://80ujm46uplmf" path="res://Themes/theme.tres" id="3_3g5uc"]
-[ext_resource type="Texture2D" uid="uid://bhbeqqyawhi1n" path="res://icon.svg" id="4_huh4a"]
-[ext_resource type="Script" uid="uid://dsaojagsmyn58" path="res://choice.gd" id="4_xg2mj"]
+[ext_resource type="Texture2D" uid="uid://bur2egqa6ho22" path="res://Assets/The Color of Sin/Personnage/Eole/droit_colere.png" id="3_3nas4"]
+[ext_resource type="Texture2D" uid="uid://bsk0u6gbsl4wx" path="res://Assets/The Color of Sin/Personnage/Lucie/pyjama_colère.png" id="4_3nas4"]
+[ext_resource type="PackedScene" uid="uid://bkcn5yfwycxs0" path="res://Scenes/choice.tscn" id="6_3nas4"]
+[ext_resource type="StyleBox" uid="uid://cbcjgeg3p0u7p" path="res://Themes/panel.tres" id="7_ionbg"]
 
-[node name="Character" type="Control" node_paths=PackedStringArray("sprite_gauche", "sprite_droit", "sprite_centre", "label", "dialog", "choices", "text_dialog", "background_dialog")]
+[sub_resource type="Animation" id="Animation_go73k"]
+resource_name = "0_1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(204, -100), Vector2(0, -100)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_e7lv4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(204, -100)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_gkwrw"]
+resource_name = "leave"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(204, -100), Vector2(1000, -100)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cvtmf"]
+_data = {
+&"0_1": SubResource("Animation_go73k"),
+&"RESET": SubResource("Animation_e7lv4"),
+&"leave": SubResource("Animation_gkwrw")
+}
+
+[sub_resource type="Animation" id="Animation_ylrh8"]
+resource_name = "1_0"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -100), Vector2(204, -100)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_kr02g"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -100)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_upfe5"]
+resource_name = "leave"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -100), Vector2(-1139, -100)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ry4mi"]
+_data = {
+&"1_0": SubResource("Animation_ylrh8"),
+&"RESET": SubResource("Animation_kr02g"),
+&"leave": SubResource("Animation_upfe5")
+}
+
+[sub_resource type="Animation" id="Animation_ry4mi"]
+resource_name = "0_1"
+
+[sub_resource type="Animation" id="Animation_pfg5j"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-335, -100)]
+}
+
+[sub_resource type="Animation" id="Animation_cvtmf"]
+resource_name = "leave"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-335, -100), Vector2(-1266, -100)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_upfe5"]
+_data = {
+&"0_1": SubResource("Animation_ry4mi"),
+&"RESET": SubResource("Animation_pfg5j"),
+&"leave": SubResource("Animation_cvtmf")
+}
+
+[node name="Dialog" type="Control" node_paths=PackedStringArray("sprites_char", "label", "choices", "text_dialog")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -14,80 +207,114 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ni5fb")
-character_data = ExtResource("2_u40lh")
-sprite_gauche = NodePath("SpritePersoGauche")
-sprite_droit = NodePath("SpritePersoDroit")
-sprite_centre = NodePath("SpritePersoCentre")
-label = NodePath("MarginContainer/VBoxContainer/BackgroundDialog/MarginContainer/Dialog/Label")
-dialog = NodePath("MarginContainer/VBoxContainer/BackgroundDialog/MarginContainer/Dialog")
-choices = NodePath("MarginContainer/VBoxContainer/Choices")
+sprites_char = [NodePath("SpritePersoGauche"), NodePath("SpritePersoCentre"), NodePath("SpritePersoDroit")]
+label = NodePath("MarginContainer/VBoxContainer/MarginContainer2/Label")
+choices = NodePath("MarginContainer/VBoxContainer/BackgroundDialog/MarginContainer/Dialog/MarginContainer/Choices")
 text_dialog = NodePath("MarginContainer/VBoxContainer/BackgroundDialog/MarginContainer/Dialog/TextDialog")
-background_dialog = NodePath("MarginContainer/VBoxContainer/BackgroundDialog")
-
-[node name="SpritePersoCentre" type="TextureRect" parent="."]
-offset_left = 292.0
-offset_top = 144.0
-offset_right = 792.0
-offset_bottom = 644.0
-size_flags_vertical = 3
-texture = ExtResource("4_huh4a")
-expand_mode = 2
-stretch_mode = 5
-
-[node name="SpritePersoDroit" type="TextureRect" parent="."]
-offset_left = 648.0
-offset_top = 150.0
-offset_right = 1148.0
-offset_bottom = 650.0
-size_flags_vertical = 3
-texture = ExtResource("4_huh4a")
-expand_mode = 2
-stretch_mode = 5
 
 [node name="SpritePersoGauche" type="TextureRect" parent="."]
-offset_left = 2.0
-offset_top = 139.0
-offset_right = 502.0
-offset_bottom = 639.0
-size_flags_vertical = 3
-texture = ExtResource("4_huh4a")
-expand_mode = 2
+visible = false
+layout_mode = 2
+offset_left = 204.0
+offset_top = -100.0
+offset_right = 1804.0
+offset_bottom = 1150.0
+size_flags_horizontal = 3
+size_flags_vertical = 11
+texture = ExtResource("4_3nas4")
+expand_mode = 3
 stretch_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SpritePersoGauche"]
+libraries = {
+&"": SubResource("AnimationLibrary_cvtmf")
+}
+speed_scale = 5.0
+
+[node name="SpritePersoCentre" type="TextureRect" parent="."]
+visible = false
+layout_mode = 2
+offset_top = -100.0
+offset_right = 1600.0
+offset_bottom = 1150.0
+size_flags_horizontal = 3
+size_flags_vertical = 11
+texture = ExtResource("4_3nas4")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SpritePersoCentre"]
+libraries = {
+&"": SubResource("AnimationLibrary_ry4mi")
+}
+speed_scale = 5.0
+
+[node name="SpritePersoDroit" type="TextureRect" parent="."]
+visible = false
+layout_mode = 2
+offset_left = -335.0
+offset_top = -100.0
+offset_right = 1265.0
+offset_bottom = 1150.0
+size_flags_horizontal = 3
+size_flags_vertical = 11
+texture = ExtResource("3_3nas4")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SpritePersoDroit"]
+libraries = {
+&"": SubResource("AnimationLibrary_upfe5")
+}
+speed_scale = 5.0
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 427.0
+offset_left = -1.0
+offset_top = -1.0
+offset_right = -1.0
+offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("3_3g5uc")
+theme_override_constants/margin_left = 128
+theme_override_constants/margin_right = 128
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+size_flags_vertical = 8
+alignment = 2
 
-[node name="Choices" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 3
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 750
+theme_override_constants/margin_bottom = 4
 
-[node name="Choice" type="Button" parent="MarginContainer/VBoxContainer/Choices"]
+[node name="Panel" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2"]
+custom_minimum_size = Vector2(0, 32)
 layout_mode = 2
-text = "choix 1"
-script = ExtResource("4_xg2mj")
-metadata/_custom_type_script = "uid://dsaojagsmyn58"
+size_flags_vertical = 3
+theme_override_styles/panel = ExtResource("7_ionbg")
 
-[node name="Choice2" type="Button" parent="MarginContainer/VBoxContainer/Choices"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer2"]
 layout_mode = 2
-text = "choix 2"
-script = ExtResource("4_xg2mj")
-metadata/_custom_type_script = "uid://dsaojagsmyn58"
+theme_override_colors/font_color = Color(0.894922, 0.894922, 0.894922, 1)
+text = "Lucie"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="BackgroundDialog" type="ColorRect" parent="MarginContainer/VBoxContainer"]
+[node name="BackgroundDialog" type="Panel" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 125)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-color = Color(0.851686, 0.901689, 1, 0.392157)
+theme = ExtResource("3_3g5uc")
+theme_override_styles/panel = ExtResource("7_ionbg")
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/BackgroundDialog"]
 layout_mode = 1
@@ -98,19 +325,37 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("3_3g5uc")
 
-[node name="Dialog" type="VBoxContainer" parent="MarginContainer/VBoxContainer/BackgroundDialog/MarginContainer"]
+[node name="Dialog" type="HBoxContainer" parent="MarginContainer/VBoxContainer/BackgroundDialog/MarginContainer"]
 layout_mode = 2
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/BackgroundDialog/MarginContainer/Dialog"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Name"
 
 [node name="TextDialog" type="RichTextLabel" parent="MarginContainer/VBoxContainer/BackgroundDialog/MarginContainer/Dialog"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/default_color = Color(0.894118, 0.894118, 0.894118, 1)
 bbcode_enabled = true
 text = "Texte intial pour tester."
 fit_content = true
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/BackgroundDialog/MarginContainer/Dialog"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Choices" type="VBoxContainer" parent="MarginContainer/VBoxContainer/BackgroundDialog/MarginContainer/Dialog/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Choice3" parent="MarginContainer/VBoxContainer/BackgroundDialog/MarginContainer/Dialog/MarginContainer/Choices" instance=ExtResource("6_3nas4")]
+layout_mode = 2
+alignment = 1
+
+[node name="Choice" parent="MarginContainer/VBoxContainer/BackgroundDialog/MarginContainer/Dialog/MarginContainer/Choices" instance=ExtResource("6_3nas4")]
+layout_mode = 2
+
+[node name="Symbole" parent="MarginContainer/VBoxContainer/BackgroundDialog/MarginContainer/Dialog/MarginContainer/Choices/Choice" index="0"]
+texture = null
+
+[editable path="MarginContainer/VBoxContainer/BackgroundDialog/MarginContainer/Dialog/MarginContainer/Choices/Choice"]

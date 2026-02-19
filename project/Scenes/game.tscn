@@ -1,12 +1,15 @@
-[gd_scene load_steps=12 format=3 uid="uid://ckc3nyh87hfps"]
+[gd_scene load_steps=18 format=3 uid="uid://ckc3nyh87hfps"]
 
 [ext_resource type="Script" uid="uid://c8vu7i3yrmnnq" path="res://Scripts/DialogManager.gd" id="1_erj4e"]
 [ext_resource type="PackedScene" uid="uid://ctfdg7113fa48" path="res://Scenes/dialog.tscn" id="2_qfmdu"]
+[ext_resource type="Texture2D" uid="uid://be7vgasl8q3fm" path="res://Assets/The Color of Sin/Décors/Effets/foule.PNG" id="2_wowpa"]
 [ext_resource type="Texture2D" uid="uid://njwxh80f4sjy" path="res://Assets/The Color of Sin/ecran acceuil.jpg" id="2_wrm1d"]
+[ext_resource type="Texture2D" uid="uid://kuusqtbcp48b" path="res://Assets/The Color of Sin/Décors/Objets/Prophétie.PNG" id="3_1l0tm"]
 [ext_resource type="Texture2D" uid="uid://eory3qljun" path="res://Assets/The Color of Sin/Décors/Téléphone.png" id="4_3dryh"]
-
-[sub_resource type="Resource" id="Resource_3dryh"]
-metadata/__load_path__ = "res://Assets/characters/perso1.tres"
+[ext_resource type="Texture2D" uid="uid://c033rjd2w12ty" path="res://Assets/The Color of Sin/Décors/Effets/Méchante.PNG" id="4_i6g32"]
+[ext_resource type="Texture2D" uid="uid://dvwwqj12pb50d" path="res://Assets/The Color of Sin/Décors/Objets/echo.PNG" id="5_ldgsr"]
+[ext_resource type="Theme" uid="uid://80ujm46uplmf" path="res://Themes/theme.tres" id="5_v158k"]
+[ext_resource type="Texture2D" uid="uid://ift6wg3vqt6j" path="res://Assets/The Color of Sin/Décors/Objets/Effet magique 1.PNG" id="8_ldgsr"]
 
 [sub_resource type="Animation" id="Animation_ionbg"]
 length = 0.001
@@ -49,38 +52,50 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("../../CanvasLayer/CanvasModulate:color")
+tracks/3/path = NodePath("../CanvasLayer/Effect:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
+"update": 1,
+"values": [false]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("../../CanvasLayer/ColorRect:color")
+tracks/4/path = NodePath("../CanvasLayer/Effect:self_modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(1, 1, 1, 0)]
+"values": [Color(1, 1, 1, 1)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("../../CanvasLayer/Effect:visible")
+tracks/5/path = NodePath("../CanvasLayer/CanvasModulate:color")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../CanvasLayer/ColorRect:color")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_3dryh"]
@@ -88,29 +103,45 @@ resource_name = "black_melting"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../../CanvasLayer/CanvasModulate:color")
+tracks/0/path = NodePath("../CanvasLayer/CanvasModulate:color")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0.0333333, 1),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
 }
+
+[sub_resource type="Animation" id="Animation_v158k"]
+resource_name = "change_background"
 
 [sub_resource type="Animation" id="Animation_i6g32"]
 resource_name = "play_effect"
+length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../../CanvasLayer/Effect:visible")
+tracks/0/path = NodePath("../CanvasLayer/Effect:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [true, false]
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../CanvasLayer/Effect:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.33333, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_3nas4"]
@@ -127,7 +158,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1, 2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0.349066, -0.349066, 0.349066]
+"values": [0.174533, -0.174533, 0.174533]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -139,7 +170,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.433333, 1),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(0.05, 0.05), Vector2(0.04, 0.04), Vector2(0.05, 0.05)]
+"values": [Vector2(0.08, 0.08), Vector2(0.07, 0.07), Vector2(0.08, 0.08)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -156,14 +187,15 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_wowpa"]
 resource_name = "white_melting"
+length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../../CanvasLayer/ColorRect:color")
+tracks/0/path = NodePath("../CanvasLayer/ColorRect:color")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1),
+"times": PackedFloat32Array(0, 0.25, 0.5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
@@ -173,50 +205,77 @@ tracks/0/keys = {
 _data = {
 &"RESET": SubResource("Animation_ionbg"),
 &"black_melting": SubResource("Animation_3dryh"),
+&"change_background": SubResource("Animation_v158k"),
 &"play_effect": SubResource("Animation_i6g32"),
 &"sonne": SubResource("Animation_3nas4"),
 &"white_melting": SubResource("Animation_wowpa")
 }
 
-[node name="DialogManager" type="CanvasLayer" node_paths=PackedStringArray("dialog", "background", "dialog_box", "centered_text_box", "effect_texture_rect")]
+[node name="DialogManager" type="CanvasLayer" node_paths=PackedStringArray("dialog", "background", "dialog_box", "centered_text_box", "effect_texture_rect", "sprite_foule", "sprite_objet", "sprite_mechante", "sprite_magie", "audio_player")]
 script = ExtResource("1_erj4e")
 folder_dialog = "res://Assets/dialogs"
 dialog = NodePath("Dialog")
-background = NodePath("BlackMessage/Background")
+background = NodePath("CanvasLayer/Background")
 dialog_box = NodePath("Dialog")
-centered_text_box = NodePath("BlackMessage/CenteredTextBox")
-effect_texture_rect = NodePath("Effect")
+centered_text_box = NodePath("CanvasLayer/CenteredTextBox")
+effect_texture_rect = NodePath("CanvasLayer/Effect")
+sprite_foule = NodePath("Foule")
+sprite_objet = NodePath("Objet")
+sprite_mechante = NodePath("Mechante")
+sprite_magie = NodePath("Magie")
+audio_player = NodePath("AudioStreamPlayer")
 
-[node name="CanvasModulate" type="CanvasModulate" parent="."]
-
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="Foule" type="TextureRect" parent="."]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -252.0
+offset_bottom = 252.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(1, 1, 1, 0)
+texture = ExtResource("2_wowpa")
+expand_mode = 4
+stretch_mode = 5
 
-[node name="Effect" type="TextureRect" parent="."]
+[node name="Objet" type="TextureRect" parent="."]
 visible = false
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 556.0
-offset_top = 304.0
-offset_right = 596.0
-offset_bottom = 344.0
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.9
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("3_1l0tm")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Mechante" type="TextureRect" parent="."]
+visible = false
+offset_left = -80.0
+offset_right = 1005.0
+offset_bottom = 684.0
+texture = ExtResource("4_i6g32")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Magie" type="TextureRect" parent="."]
+visible = false
+offset_left = 144.0
+offset_top = 62.0
+offset_right = 1051.0
+offset_bottom = 608.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+texture = ExtResource("5_ldgsr")
+expand_mode = 2
+stretch_mode = 5
 
-[node name="BlackMessage" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1
 
-[node name="Background" type="TextureRect" parent="BlackMessage"]
+[node name="Background" type="TextureRect" parent="CanvasLayer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -225,15 +284,39 @@ grow_vertical = 2
 texture = ExtResource("2_wrm1d")
 expand_mode = 1
 
-[node name="CenteredTextBox" type="Control" parent="BlackMessage"]
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="CanvasLayer"]
+
+[node name="Effect" type="TextureRect" parent="CanvasLayer"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("8_ldgsr")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="CenteredTextBox" type="Control" parent="CanvasLayer"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("5_v158k")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="BlackMessage/CenteredTextBox"]
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/CenteredTextBox"]
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
@@ -246,11 +329,10 @@ text = "[center]Centered Text[/center]"
 fit_content = true
 
 [node name="Dialog" parent="." instance=ExtResource("2_qfmdu")]
-character_data = SubResource("Resource_3dryh")
 
 [node name="Phone" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(1037, 411)
+position = Vector2(581, 411)
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("4_3dryh")
 
@@ -259,3 +341,6 @@ root_node = NodePath("../Phone")
 libraries = {
 &"": SubResource("AnimationLibrary_gl4vm")
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+autoplay = true
