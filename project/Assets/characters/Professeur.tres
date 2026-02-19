@@ -8,3 +8,4 @@ name = "Professeur"
 spriteFolder = "res://Assets/The Color of Sin/Personnage/Perso secondaire /Prof"
 color = Color(1, 1, 1, 0.392157)
 love = 0
+altitude = 0.7

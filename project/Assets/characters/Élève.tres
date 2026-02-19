@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource("1_mt81v")
 name = "Élève"
-spriteFolder = "res://Assets/The Color of Sin/Personnage/Eole"
+spriteFolder = "res://Assets/The Color of Sin/Personnage/Safia"
 color = Color(1, 1, 1, 0.392157)
 love = 0
+altitude = 1.0

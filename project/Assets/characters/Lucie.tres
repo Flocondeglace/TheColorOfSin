@@ -8,3 +8,4 @@ name = "Lucie"
 spriteFolder = "res://Assets/The Color of Sin/Personnage/Lucie"
 color = Color(1, 1, 1, 1)
 love = 0
+altitude = 0.7
