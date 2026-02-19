@@ -16,5 +16,5 @@ character_mood_droit = "droit_neutre"
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "[i]je suivait Eole quand j’ai remarqué un élève un peu plus âgé qui semblait me fixer[/i]"
+text = "[i]je suivais Eole quand j’ai remarqué un élève un peu plus âgé qui semblait me fixer[/i]"
 choices = Array[ExtResource("3_5f4jk")]([])

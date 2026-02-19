@@ -24,6 +24,7 @@ params = ["Chambre nuit.jpg"]
 script = ExtResource("2_ofdet")
 text = ""
 actions = Array[ExtResource("3_eeqd2")]([SubResource("Resource_j5dju"), SubResource("Resource_12c5h"), SubResource("Resource_bc8vx")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_40upl")
@@ -35,5 +36,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Bon, il y a un livre qui m’attend!"
+text = "Bon, il y a un livre qui m’attend !"
 choices = Array[ExtResource("2_ofdet")]([SubResource("Resource_mk104")])

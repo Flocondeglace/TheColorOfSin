@@ -20,6 +20,7 @@ params = [105.0]
 script = ExtResource("3_jjby2")
 text = ""
 actions = Array[ExtResource("4_3i8ri")]([SubResource("Resource_pmqo4"), SubResource("Resource_nfltj")])
+symbole = 0
 
 [resource]
 script = ExtResource("5_r3wbm")
@@ -32,5 +33,5 @@ character_mood_droit = "droite_neutre"
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "[i]Je me mis à le suivre sans réfléchir sans doute de peur des représailles si je me montrais trop rebelle.[/i]"
+text = "[i]Je me mis à le suivre sans réfléchir, sans doute de peur des représailles si je me montrais trop rebelle.[/i]"
 choices = Array[ExtResource("3_jjby2")]([SubResource("Resource_phncb")])

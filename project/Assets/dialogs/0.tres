@@ -15,5 +15,5 @@ character_mood_centre = ""
 left_talker = true
 center_talker = false
 text = "The Color of Sin est un roman graphique interactif.
-	Au cours de votre aventure, vous serez amené(e) à faire des choix qui détermineront la suite de votre histoire"
+	Au cours de votre aventure, vous serez amené(e) à faire des choix qui détermineront la suite de votre histoire."
 choices = Array[ExtResource("2_l3kf0")]([])

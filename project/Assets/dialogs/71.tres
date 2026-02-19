@@ -7,8 +7,8 @@
 
 [sub_resource type="Resource" id="Resource_x4e8l"]
 script = ExtResource("3_r3r8g")
-action = 4
-params = ["Foulle.PNG"]
+action = 10
+params = []
 
 [sub_resource type="Resource" id="Resource_5hj4m"]
 script = ExtResource("3_r3r8g")
@@ -19,6 +19,7 @@ params = [72.0]
 script = ExtResource("2_24lyp")
 text = ""
 actions = Array[ExtResource("3_r3r8g")]([SubResource("Resource_x4e8l"), SubResource("Resource_5hj4m")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_wd3sa")
@@ -30,5 +31,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Non… je…"
+text = "Non... je..."
 choices = Array[ExtResource("2_24lyp")]([SubResource("Resource_4rb5x")])

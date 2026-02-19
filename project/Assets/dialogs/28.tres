@@ -14,5 +14,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Hein?! Il n'y a rien du tout mais c’est quoi ce fils au juste ?"
+text = "Hein ?! Il n'y a rien du tout !? Mais c’est quoi ce fil au juste ?"
 choices = Array[ExtResource("2_qbi56")]([])

@@ -16,5 +16,5 @@ character_mood_droit = "magie"
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "(Qu’est ce qui ce passe là ?)"
+text = "[i]Qu’est-ce qui ce passe là ?[/i]"
 choices = Array[ExtResource("3_sxsr6")]([])

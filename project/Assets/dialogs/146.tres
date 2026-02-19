@@ -1,18 +1,20 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=4 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
 
-[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_r4ujy"]
-[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_obqma"]
-[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_2q2xf"]
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_obqma"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="2_2q2xf"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_guduv"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_5co7d"]
 
 [resource]
-script = ExtResource("3_2q2xf")
+script = ExtResource("4_5co7d")
 id = 146
 next = 147
-character = ExtResource("1_r4ujy")
-character_mood = "pyjama_timide_gauche"
-character_mood_droit = ""
+character = ExtResource("1_obqma")
+character_mood = "ecole_timide"
+character_droit = ExtResource("2_2q2xf")
+character_mood_droit = "droit_explication"
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = " C’est… compliqué… "
-choices = Array[ExtResource("2_obqma")]([])
+text = " C’est... compliqué... "
+choices = Array[ExtResource("3_guduv")]([])

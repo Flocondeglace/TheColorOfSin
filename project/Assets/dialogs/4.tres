@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=9 format=3]
 
 [ext_resource type="Resource" path="res://Assets/characters/Inconnu.tres" id="1_yj085"]
 [ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_qkggg"]
@@ -7,18 +7,24 @@
 
 [sub_resource type="Resource" id="Resource_n8vri"]
 script = ExtResource("3_syayo")
+action = 14
+params = ["first.mp3"]
+
+[sub_resource type="Resource" id="Resource_u403o"]
+script = ExtResource("3_syayo")
 action = 4
 params = ["Ruelle.JPG"]
 
-[sub_resource type="Resource" id="Resource_u403o"]
+[sub_resource type="Resource" id="Resource_hitif"]
 script = ExtResource("3_syayo")
 action = 1
 params = [5.0]
 
-[sub_resource type="Resource" id="Resource_hitif"]
+[sub_resource type="Resource" id="Resource_pvsi1"]
 script = ExtResource("2_qkggg")
 text = ""
-actions = Array[ExtResource("3_syayo")]([SubResource("Resource_n8vri"), SubResource("Resource_u403o")])
+actions = Array[ExtResource("3_syayo")]([SubResource("Resource_n8vri"), SubResource("Resource_u403o"), SubResource("Resource_hitif")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_42kd4")
@@ -30,5 +36,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Faites vos choix en suivant votre cœur."
-choices = Array[ExtResource("2_qkggg")]([SubResource("Resource_hitif")])
+text = "Faites vos choix en suivant votre cœur !"
+choices = Array[ExtResource("2_qkggg")]([SubResource("Resource_pvsi1")])

@@ -14,5 +14,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Aller tout le monde le cours va commencer, qui peut me dire de quoi a t’on parlé la dernière fois?"
+text = "Aller tout le monde, le cours va commencer. Qui peut me dire de quoi avons nous parlé la dernière fois ?"
 choices = Array[ExtResource("2_0nwt8")]([])

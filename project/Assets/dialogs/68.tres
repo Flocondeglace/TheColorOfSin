@@ -18,5 +18,5 @@ character_centre = ExtResource("2_cwmms")
 character_mood_centre = "colere"
 left_talker = false
 center_talker = false
-text = "Tu fais quoi? "
+text = "Tu fais quoi ? "
 choices = Array[ExtResource("4_2ep7c")]([])

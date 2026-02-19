@@ -18,5 +18,5 @@ character_centre = ExtResource("2_ne4fg")
 character_mood_centre = "colere"
 left_talker = true
 center_talker = true
-text = "Vous n’êtes pas élèves, que faites-vous ici? J’appelle le principal !"
+text = "Vous n’êtes pas élève, que faites-vous ici ? J’appelle le principal !"
 choices = Array[ExtResource("4_nru24")]([])

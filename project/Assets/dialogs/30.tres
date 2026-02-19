@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=7 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
 
 [ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_ttb6e"]
 [ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_41ulw"]
@@ -7,13 +7,19 @@
 
 [sub_resource type="Resource" id="Resource_ujpx7"]
 script = ExtResource("3_vtt6q")
+action = 12
+params = ["Méchante.PNG"]
+
+[sub_resource type="Resource" id="Resource_pj1ci"]
+script = ExtResource("3_vtt6q")
 action = 1
 params = [31.0]
 
-[sub_resource type="Resource" id="Resource_pj1ci"]
+[sub_resource type="Resource" id="Resource_uufoq"]
 script = ExtResource("2_41ulw")
 text = ""
-actions = Array[ExtResource("3_vtt6q")]([SubResource("Resource_ujpx7")])
+actions = Array[ExtResource("3_vtt6q")]([SubResource("Resource_ujpx7"), SubResource("Resource_pj1ci")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_yvj44")
@@ -25,5 +31,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Où suis je? Et qu’est-ce ce que c’est que…"
-choices = Array[ExtResource("2_41ulw")]([SubResource("Resource_pj1ci")])
+text = "Où suis-je ? Et qu’est-ce ce que c’est que..."
+choices = Array[ExtResource("2_41ulw")]([SubResource("Resource_uufoq")])

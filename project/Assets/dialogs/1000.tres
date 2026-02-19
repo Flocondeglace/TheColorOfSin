@@ -1,34 +1,32 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=7 format=3]
 
-[ext_resource type="Resource" path="res://Assets/characters/Kirua.tres" id="1_ukajb"]
-[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_eamst"]
-[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_mkpgh"]
-[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_aurx4"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="1_yrya5"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="2_ukajb"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_eamst"]
 
-[sub_resource type="Resource" id="Resource_wunvm"]
-script = ExtResource("3_mkpgh")
+[sub_resource type="Resource" id="Resource_mkpgh"]
+script = ExtResource("2_ukajb")
 action = 1
 params = [1.0]
 
-[sub_resource type="Resource" id="Resource_n71wr"]
-script = ExtResource("2_eamst")
+[sub_resource type="Resource" id="Resource_aurx4"]
+script = ExtResource("1_yrya5")
 text = "choix 1 "
-actions = Array[ExtResource("3_mkpgh")]([SubResource("Resource_wunvm")])
+actions = Array[ExtResource("2_ukajb")]([SubResource("Resource_mkpgh")])
 
-[sub_resource type="Resource" id="Resource_06ggr"]
-script = ExtResource("2_eamst")
+[sub_resource type="Resource" id="Resource_wunvm"]
+script = ExtResource("1_yrya5")
 text = "choix 2"
-actions = Array[ExtResource("3_mkpgh")]([])
+actions = Array[ExtResource("2_ukajb")]([])
 
 [resource]
-script = ExtResource("4_aurx4")
+script = ExtResource("3_eamst")
 id = 1000
 next = 2
-character = ExtResource("1_ukajb")
 character_mood = "angry"
 character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
 text = "Dialog importé depuis json !"
-choices = Array[ExtResource("2_eamst")]([SubResource("Resource_n71wr"), SubResource("Resource_06ggr")])
+choices = Array[ExtResource("1_yrya5")]([SubResource("Resource_aurx4"), SubResource("Resource_wunvm")])

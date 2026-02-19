@@ -1,34 +1,37 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=9 format=3]
 
-[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_q4boo"]
-[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_4x8oe"]
-[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_m37xh"]
-[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_i766m"]
+[ext_resource type="Resource" path="res://Assets/characters/Inconnu.tres" id="1_4x8oe"]
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="2_m37xh"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_i766m"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="4_ng5rv"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_1sk8s"]
 
-[sub_resource type="Resource" id="Resource_ng5rv"]
-script = ExtResource("3_m37xh")
-action = 9
+[sub_resource type="Resource" id="Resource_243gp"]
+script = ExtResource("4_ng5rv")
+action = 12
 params = ["Effet magique 2.PNG"]
 
-[sub_resource type="Resource" id="Resource_1sk8s"]
-script = ExtResource("3_m37xh")
+[sub_resource type="Resource" id="Resource_34ea4"]
+script = ExtResource("4_ng5rv")
 action = 1
 params = [127.0]
 
-[sub_resource type="Resource" id="Resource_243gp"]
-script = ExtResource("2_4x8oe")
+[sub_resource type="Resource" id="Resource_wgw8f"]
+script = ExtResource("3_i766m")
 text = ""
-actions = Array[ExtResource("3_m37xh")]([SubResource("Resource_ng5rv"), SubResource("Resource_1sk8s")])
+actions = Array[ExtResource("4_ng5rv")]([SubResource("Resource_243gp"), SubResource("Resource_34ea4")])
+symbole = 0
 
 [resource]
-script = ExtResource("4_i766m")
+script = ExtResource("5_1sk8s")
 id = 126
 next = 127
-character = ExtResource("1_q4boo")
-character_mood = "pyjama_surprise"
+character = ExtResource("1_4x8oe")
+character_mood = "happy"
 character_mood_droit = ""
-character_mood_centre = ""
+character_centre = ExtResource("2_m37xh")
+character_mood_centre = "pyjama_surprise"
 left_talker = true
-center_talker = false
+center_talker = true
 text = "[i]les cristaux clignotent, c’est normal ? Et c'est moi ou je commence à flotter dans les airs là ?[/i]"
-choices = Array[ExtResource("2_4x8oe")]([SubResource("Resource_243gp")])
+choices = Array[ExtResource("3_i766m")]([SubResource("Resource_wgw8f")])

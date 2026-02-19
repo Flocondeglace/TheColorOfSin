@@ -1,18 +1,20 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=4 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
 
-[ext_resource type="Resource" path="res://Assets/characters/Professeur.tres" id="1_j5nn7"]
-[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_tmcrf"]
-[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_2lt50"]
+[ext_resource type="Resource" path="res://Assets/characters/Professeur.tres" id="1_tmcrf"]
+[ext_resource type="Resource" path="res://Assets/characters/Élève.tres" id="2_2lt50"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_md0vr"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_n73ip"]
 
 [resource]
-script = ExtResource("3_2lt50")
+script = ExtResource("4_n73ip")
 id = 62
 next = 63
-character = ExtResource("1_j5nn7")
+character = ExtResource("1_tmcrf")
 character_mood = "colere"
+character_droit = ExtResource("2_2lt50")
 character_mood_droit = ""
 character_mood_centre = ""
-left_talker = true
+left_talker = false
 center_talker = false
-text = "Pas encore cette prophétie on sait tous que ce n’est qu’une légende."
-choices = Array[ExtResource("2_tmcrf")]([])
+text = "Pas encore cette prophétie... On sait tous que ce n’est qu’une légende."
+choices = Array[ExtResource("3_md0vr")]([])

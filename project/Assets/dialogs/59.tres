@@ -7,8 +7,8 @@
 
 [sub_resource type="Resource" id="Resource_mhq47"]
 script = ExtResource("3_t4cas")
-action = 4
-params = ["Classe.JPG"]
+action = 13
+params = []
 
 [sub_resource type="Resource" id="Resource_uxwbh"]
 script = ExtResource("3_t4cas")
@@ -19,6 +19,7 @@ params = [60.0]
 script = ExtResource("2_04cog")
 text = ""
 actions = Array[ExtResource("3_t4cas")]([SubResource("Resource_mhq47"), SubResource("Resource_uxwbh")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_pqgmx")
@@ -30,5 +31,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "C’est la prophétie."
+text = "La prophétie !"
 choices = Array[ExtResource("2_04cog")]([SubResource("Resource_qgbhj")])

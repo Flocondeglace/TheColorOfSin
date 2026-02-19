@@ -16,5 +16,5 @@ character_mood_droit = "droit_surprise"
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "(Soudain, la sonnerie retentit.)"
+text = "[i]Soudain, la sonnerie retentit.[/i]"
 choices = Array[ExtResource("3_y6nh3")]([])

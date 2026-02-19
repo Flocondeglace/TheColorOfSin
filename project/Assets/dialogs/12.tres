@@ -17,8 +17,9 @@ params = ["Papa"]
 
 [sub_resource type="Resource" id="Resource_mbmm4"]
 script = ExtResource("2_w1v2g")
-text = "suivant"
+text = ""
 actions = Array[ExtResource("3_84mx4")]([SubResource("Resource_40dai"), SubResource("Resource_n5nod")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_tev6y")
@@ -30,5 +31,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "(Bon, j’ai des nouilles dans le placard, et j’ai fini mes devoirs. Je vais enfin pouvoir lire un peu!)"
+text = "[i]Bon, j’ai des nouilles dans le placard, et j’ai fini mes devoirs. Je vais enfin pouvoir lire un peu ![/i]"
 choices = Array[ExtResource("2_w1v2g")]([SubResource("Resource_mbmm4")])

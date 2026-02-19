@@ -16,5 +16,5 @@ character_mood_droit = "droit_explication"
 character_mood_centre = ""
 left_talker = false
 center_talker = false
-text = "Euh à Elemis, c’est la capital de la magie…"
+text = "Euh à Elemis, c’est la capitale de la magie…"
 choices = Array[ExtResource("3_2sa1r")]([])

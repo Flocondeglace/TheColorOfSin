@@ -16,5 +16,5 @@ character_mood_droit = "droit_inquiet"
 character_mood_centre = ""
 left_talker = false
 center_talker = false
-text = "Oui.. tu est sur que ça va? Je devrais peu être te sonder."
+text = "Oui... tu es sûre que ça va ? Je devrais peut-être te sonder."
 choices = Array[ExtResource("3_hxq4t")]([])

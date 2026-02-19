@@ -17,8 +17,9 @@ params = [25.0]
 
 [sub_resource type="Resource" id="Resource_5dqlr"]
 script = ExtResource("2_03sjl")
-text = "Je verrait ca demain"
+text = "Je verrais ça demain"
 actions = Array[ExtResource("3_k5akg")]([SubResource("Resource_4pcpg"), SubResource("Resource_ksnym")])
+symbole = 0
 
 [sub_resource type="Resource" id="Resource_pybpj"]
 script = ExtResource("3_k5akg")
@@ -29,6 +30,7 @@ params = [26.0]
 script = ExtResource("2_03sjl")
 text = "Aller voir"
 actions = Array[ExtResource("3_k5akg")]([SubResource("Resource_pybpj")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_3jroh")

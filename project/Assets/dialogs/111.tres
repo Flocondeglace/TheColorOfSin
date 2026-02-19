@@ -1,34 +1,37 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=9 format=3]
 
-[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="1_80y6v"]
-[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_bqrxq"]
-[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_2o036"]
-[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_rtkc5"]
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_bqrxq"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_2o036"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_rtkc5"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="4_wxnm7"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_8vc31"]
 
-[sub_resource type="Resource" id="Resource_wxnm7"]
-script = ExtResource("3_2o036")
-action = 9
-params = ["flux.PNG"]
+[sub_resource type="Resource" id="Resource_rwt4c"]
+script = ExtResource("4_wxnm7")
+action = 12
+params = ["flux.PNG", "magie"]
 
-[sub_resource type="Resource" id="Resource_8vc31"]
-script = ExtResource("3_2o036")
+[sub_resource type="Resource" id="Resource_gi7l0"]
+script = ExtResource("4_wxnm7")
 action = 1
 params = [112.0]
 
-[sub_resource type="Resource" id="Resource_rwt4c"]
-script = ExtResource("2_bqrxq")
+[sub_resource type="Resource" id="Resource_f68yd"]
+script = ExtResource("3_rtkc5")
 text = ""
-actions = Array[ExtResource("3_2o036")]([SubResource("Resource_wxnm7"), SubResource("Resource_8vc31")])
+actions = Array[ExtResource("4_wxnm7")]([SubResource("Resource_rwt4c"), SubResource("Resource_gi7l0")])
+symbole = 0
 
 [resource]
-script = ExtResource("4_rtkc5")
+script = ExtResource("5_8vc31")
 id = 111
 next = 112
-character = ExtResource("1_80y6v")
-character_mood = "explication"
-character_mood_droit = ""
+character = ExtResource("1_bqrxq")
+character_mood = "pyjama_intrigué_gauche"
+character_droit = ExtResource("2_2o036")
+character_mood_droit = "explication"
 character_mood_centre = ""
-left_talker = true
+left_talker = false
 center_talker = false
 text = "La magie des « ondes » qui permet de protéger. "
-choices = Array[ExtResource("2_bqrxq")]([SubResource("Resource_rwt4c")])
+choices = Array[ExtResource("3_rtkc5")]([SubResource("Resource_f68yd")])

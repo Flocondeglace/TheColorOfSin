@@ -16,5 +16,5 @@ character_mood_droit = "droite_explication"
 character_mood_centre = ""
 left_talker = false
 center_talker = false
-text = "Tu ne viens pas de ce monde donc je vais t’expliquer quelque…"
+text = "Tu ne viens pas de ce monde donc je vais t’expliquer quelque chose..."
 choices = Array[ExtResource("3_78o8d")]([])

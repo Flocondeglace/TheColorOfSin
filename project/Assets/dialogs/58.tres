@@ -7,7 +7,7 @@
 
 [sub_resource type="Resource" id="Resource_yu1r8"]
 script = ExtResource("3_nv7n7")
-action = 4
+action = 12
 params = ["Prophétie.PNG"]
 
 [sub_resource type="Resource" id="Resource_abvc1"]
@@ -19,6 +19,7 @@ params = [59.0]
 script = ExtResource("2_qi66w")
 text = ""
 actions = Array[ExtResource("3_nv7n7")]([SubResource("Resource_yu1r8"), SubResource("Resource_abvc1")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_4ueas")
@@ -30,5 +31,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "C’est tout à fait ça Safia. Et dans ses savoirs, il y a l’un des plus mystérieux"
+text = "C’est tout à fait ça Safia. Et dans ces savoirs, il y a l’un des plus mystérieux."
 choices = Array[ExtResource("2_qi66w")]([SubResource("Resource_3a44i")])

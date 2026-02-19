@@ -14,6 +14,7 @@ params = [65.0]
 script = ExtResource("2_qgfhb")
 text = "Être curieuse"
 actions = Array[ExtResource("3_pt2nm")]([SubResource("Resource_3dlp2")])
+symbole = 0
 
 [sub_resource type="Resource" id="Resource_mupaj"]
 script = ExtResource("3_pt2nm")
@@ -22,8 +23,9 @@ params = [73.0]
 
 [sub_resource type="Resource" id="Resource_6yuv7"]
 script = ExtResource("2_qgfhb")
-text = "rester discrète"
+text = "Rester discrète"
 actions = Array[ExtResource("3_pt2nm")]([SubResource("Resource_mupaj")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_wplj3")

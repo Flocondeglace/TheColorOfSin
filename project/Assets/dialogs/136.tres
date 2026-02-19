@@ -16,5 +16,5 @@ character_mood_droit = "droite_neutre"
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "(Mes pouvoir?)"
+text = "[i]Mes pouvoirs ?[/i]"
 choices = Array[ExtResource("3_t5748")]([])

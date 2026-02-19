@@ -14,5 +14,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "C’est quoi ce fils bizarre qui flotte dans les air depuis mon armoire?"
+text = "C’est quoi ce fil bizarre qui flotte dans les airs depuis mon armoire ?"
 choices = Array[ExtResource("2_vajjo")]([])

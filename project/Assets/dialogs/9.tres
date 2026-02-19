@@ -19,6 +19,7 @@ params = [10.0]
 script = ExtResource("2_3d2sa")
 text = ""
 actions = Array[ExtResource("3_hif57")]([SubResource("Resource_kwbn5"), SubResource("Resource_ihpbj")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_10eym")
@@ -30,5 +31,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "J’ai tellement hâte de jeter dans mon lit!"
+text = "J’ai tellement hâte de me jeter dans mon lit !"
 choices = Array[ExtResource("2_3d2sa")]([SubResource("Resource_vspye")])

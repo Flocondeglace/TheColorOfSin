@@ -24,6 +24,7 @@ params = ["Classe.JPG"]
 script = ExtResource("2_ixxkl")
 text = ""
 actions = Array[ExtResource("3_675l3")]([SubResource("Resource_nh5i0"), SubResource("Resource_6ohu5"), SubResource("Resource_yrg8q")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_wov2h")

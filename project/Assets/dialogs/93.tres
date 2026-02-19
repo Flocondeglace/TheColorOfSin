@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="DialogData" load_steps=6 format=3]
 
 [ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_247ox"]
-[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_qnlts"]
-[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="3_8ddsi"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="2_qnlts"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="3_8ddsi"]
 [ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_n1tgu"]
 [ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_mhr5m"]
 
@@ -13,10 +13,10 @@ next = 94
 character = ExtResource("1_247ox")
 character_mood = "pyjama_panique_gauche"
 character_droit = ExtResource("3_8ddsi")
-character_mood_droit = "droite_souriant"
+character_mood_droit = "droite_colere"
 character_centre = ExtResource("2_qnlts")
-character_mood_centre = "droite_colere"
-left_talker = true
-center_talker = true
-text = "Pourquoi donc ? elle n’est pas élevée et s’est introduite dans l’établissement sans autorisation."
+character_mood_centre = "droite_souriant"
+left_talker = false
+center_talker = false
+text = "Pourquoi donc ? Elle n’est pas bien élevée et s’est introduite dans l’établissement sans autorisation."
 choices = Array[ExtResource("4_n1tgu")]([])

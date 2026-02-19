@@ -16,5 +16,5 @@ character_mood_droit = "droite_neutre"
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Reçu quelque chose? Comme quoi?"
+text = "Reçu quelque chose ? Comme quoi ?"
 choices = Array[ExtResource("3_4jyuk")]([])

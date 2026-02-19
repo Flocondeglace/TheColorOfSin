@@ -16,5 +16,5 @@ character_mood_droit = "droite_explication"
 character_mood_centre = ""
 left_talker = false
 center_talker = false
-text = "Pour savoir quel est ton type de magie il existe un test Tu vas devoir aller au centre du cercle de cristal."
+text = "Pour savoir quel est ton type de magie il existe un test. Tu vas devoir aller au centre du cercle de cristal."
 choices = Array[ExtResource("3_gwrmx")]([])

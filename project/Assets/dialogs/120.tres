@@ -16,5 +16,5 @@ character_mood_droit = "droite_neutre"
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Ne t’en fais pas, tu n’as rien d’autre à faire que de te concentrer."
+text = "J'aurais des pouvoirs ? Moi ?!"
 choices = Array[ExtResource("3_xxnar")]([])

@@ -16,5 +16,5 @@ character_mood_droit = "droit_inquiet"
 character_mood_centre = ""
 left_talker = false
 center_talker = false
-text = "Eh! Ça va?"
+text = "Eh ! Ça va ?"
 choices = Array[ExtResource("3_sdh36")]([])

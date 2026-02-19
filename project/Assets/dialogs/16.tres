@@ -14,5 +14,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "D’ailleurs, tu es prête pour la semaine prochaine ? Oublie pas qu’on vient chez toi, 18ans ça ce fête !"
+text = "D’ailleurs, tu es prête pour la semaine prochaine ? Oublie pas qu’on vient chez toi, 18 ans ça se fête !"
 choices = Array[ExtResource("2_pp6dn")]([])

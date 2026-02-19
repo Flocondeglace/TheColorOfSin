@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="DialogData" load_steps=6 format=3]
 
 [ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_0v5qx"]
-[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_4yk51"]
-[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="3_gcpok"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="2_4yk51"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="3_gcpok"]
 [ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_oaei7"]
 [ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_kjc2v"]
 
@@ -13,10 +13,10 @@ next = 88
 character = ExtResource("1_0v5qx")
 character_mood = "pyjama_surprise_gauche"
 character_droit = ExtResource("3_gcpok")
-character_mood_droit = "droite_souriant"
+character_mood_droit = "droite_neutre"
 character_centre = ExtResource("2_4yk51")
-character_mood_centre = "droite_neutre"
-left_talker = false
-center_talker = false
+character_mood_centre = "droite_souriant"
+left_talker = true
+center_talker = true
 text = "C’est moi monsieur le proviseur, elle était perdue."
 choices = Array[ExtResource("4_oaei7")]([])

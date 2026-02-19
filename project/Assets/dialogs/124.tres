@@ -1,18 +1,20 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=4 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
 
-[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_ylddj"]
-[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_74abb"]
-[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_0xsy6"]
+[ext_resource type="Resource" path="res://Assets/characters/Inconnu.tres" id="1_74abb"]
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="2_0xsy6"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_kkigj"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_wwt53"]
 
 [resource]
-script = ExtResource("3_0xsy6")
+script = ExtResource("4_wwt53")
 id = 124
 next = 125
-character = ExtResource("1_ylddj")
-character_mood = "pyjama_panique"
+character = ExtResource("1_74abb")
+character_mood = "happy"
 character_mood_droit = ""
-character_mood_centre = ""
+character_centre = ExtResource("2_0xsy6")
+character_mood_centre = "pyjama_panique"
 left_talker = true
-center_talker = false
-text = "[i]Oui me concentrer... mais sur quoi?[/i]"
-choices = Array[ExtResource("2_74abb")]([])
+center_talker = true
+text = "[i]Oui me concentrer... mais sur quoi ?[/i]"
+choices = Array[ExtResource("3_kkigj")]([])

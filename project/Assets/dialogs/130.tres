@@ -16,5 +16,5 @@ character_mood_droit = "droite_neutre"
 character_mood_centre = ""
 left_talker = false
 center_talker = false
-text = "Hrm...Hrm… as-tu reçu quelque chose?"
+text = "Hrm... Hrm... as-tu reçu quelque chose ?"
 choices = Array[ExtResource("3_1lc7y")]([])

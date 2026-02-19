@@ -19,6 +19,7 @@ params = [24.0]
 script = ExtResource("2_8poav")
 text = ""
 actions = Array[ExtResource("3_s2o0l")]([SubResource("Resource_tbbwp"), SubResource("Resource_4qyyv")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_dxxvh")
@@ -30,5 +31,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "(Oh mince je me suis endormi en lisant! Je savais que j’aurais du m’arrêter quand il était 2h du matin.)"
+text = "[i]Oh mince je me suis endormie en lisant ! Je savais que j’aurais dû m’arrêter quand il était 2h du matin. [/i]"
 choices = Array[ExtResource("2_8poav")]([SubResource("Resource_i3ukg")])

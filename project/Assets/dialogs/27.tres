@@ -19,6 +19,7 @@ params = [28.0]
 script = ExtResource("2_kwdlm")
 text = ""
 actions = Array[ExtResource("3_nqlai")]([SubResource("Resource_quvbx"), SubResource("Resource_ke6lh")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_dlvtc")
@@ -30,5 +31,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "(Plus je m’approche de lui plus il devient rouge. J'arrive devant mon armoire je prend mon courage à 2 mains et j’ouvre d’un coup mon armoire)"
+text = "[i]Plus je m’approche de lui, plus il devient rouge. J'arrive devant mon armoire, je prend mon courage à deux mains et je l’ouvre d’un coup.[/i]"
 choices = Array[ExtResource("2_kwdlm")]([SubResource("Resource_jypu4")])

@@ -14,5 +14,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Cette prophétie est très importante dans l’histoire de la cité."
+text = "Cette prophétie est très importante dans l’histoire de la citée."
 choices = Array[ExtResource("2_towwd")]([])

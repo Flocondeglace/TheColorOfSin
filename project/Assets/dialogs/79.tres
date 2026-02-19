@@ -1,22 +1,39 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=6 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=10 format=3]
 
-[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_8mbgq"]
-[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="2_hkjeh"]
-[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="3_33eoh"]
-[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_meicp"]
-[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_x242o"]
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_hkjeh"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="2_33eoh"]
+[ext_resource type="Resource" path="res://Assets/characters/Eole.tres" id="3_meicp"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_x242o"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="5_k0a17"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="6_tol5t"]
+
+[sub_resource type="Resource" id="Resource_omf3v"]
+script = ExtResource("5_k0a17")
+action = 10
+params = []
+
+[sub_resource type="Resource" id="Resource_oqhlg"]
+script = ExtResource("5_k0a17")
+action = 1
+params = [81.0]
+
+[sub_resource type="Resource" id="Resource_x66el"]
+script = ExtResource("4_x242o")
+text = ""
+actions = Array[ExtResource("5_k0a17")]([SubResource("Resource_omf3v"), SubResource("Resource_oqhlg")])
+symbole = 0
 
 [resource]
-script = ExtResource("5_x242o")
+script = ExtResource("6_tol5t")
 id = 79
-next = 80
-character = ExtResource("1_8mbgq")
-character_mood = "pyjama_timide_gauche"
-character_droit = ExtResource("3_33eoh")
+next = 81
+character = ExtResource("1_hkjeh")
+character_mood = "pyjama_timide"
+character_droit = ExtResource("3_meicp")
 character_mood_droit = "droit_colere"
-character_centre = ExtResource("2_hkjeh")
+character_centre = ExtResource("2_33eoh")
 character_mood_centre = "taquin"
 left_talker = true
 center_talker = true
-text = "Du calme, on peut bien discuter. Une nouvelle personne aussi… -particulière ça n'arrive pas tout les jours."
-choices = Array[ExtResource("4_meicp")]([])
+text = "Du calme, on peut bien discuter. Une nouvelle personne aussi... [i]<<particulière>>[/i] ça n'arrive pas tous les jours."
+choices = Array[ExtResource("4_x242o")]([SubResource("Resource_x66el")])

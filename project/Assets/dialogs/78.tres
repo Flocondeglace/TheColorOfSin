@@ -18,5 +18,5 @@ character_centre = ExtResource("2_1ctp6")
 character_mood_centre = "souriant"
 left_talker = false
 center_talker = false
-text = "Désolé on a pas le temps."
+text = "Désolé, on a pas le temps."
 choices = Array[ExtResource("4_owtnx")]([])

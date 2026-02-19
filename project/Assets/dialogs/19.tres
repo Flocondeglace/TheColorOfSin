@@ -19,6 +19,7 @@ params = []
 script = ExtResource("2_d7ecg")
 text = ""
 actions = Array[ExtResource("3_0c0wi")]([SubResource("Resource_7fyys"), SubResource("Resource_unvkc")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_d4t5j")
@@ -30,5 +31,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Bisous."
+text = "Bisous <3"
 choices = Array[ExtResource("2_d7ecg")]([SubResource("Resource_ixa4q")])

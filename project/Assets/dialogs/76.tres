@@ -1,18 +1,20 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=4 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
 
-[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="1_toyiw"]
-[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_nqp87"]
-[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_pdkls"]
+[ext_resource type="Resource" path="res://Assets/characters/Inconnu.tres" id="1_nqp87"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="2_pdkls"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_iqbyb"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_xxubt"]
 
 [resource]
-script = ExtResource("3_pdkls")
+script = ExtResource("4_xxubt")
 id = 76
 next = 77
-character = ExtResource("1_toyiw")
-character_mood = "souriant"
+character = ExtResource("1_nqp87")
+character_mood = "happy"
 character_mood_droit = ""
-character_mood_centre = ""
+character_centre = ExtResource("2_pdkls")
+character_mood_centre = "souriant"
 left_talker = true
-center_talker = false
+center_talker = true
 text = "Hé, salut."
-choices = Array[ExtResource("2_nqp87")]([])
+choices = Array[ExtResource("3_iqbyb")]([])

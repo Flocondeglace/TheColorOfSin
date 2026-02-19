@@ -1,34 +1,37 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=9 format=3]
 
-[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_tsxes"]
-[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_5effu"]
-[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_fithg"]
-[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_cfd5d"]
+[ext_resource type="Resource" path="res://Assets/characters/Inconnu.tres" id="1_5effu"]
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="2_fithg"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_cfd5d"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="4_0cvbd"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_ci50n"]
 
-[sub_resource type="Resource" id="Resource_0cvbd"]
-script = ExtResource("3_fithg")
-action = 9
+[sub_resource type="Resource" id="Resource_fvgim"]
+script = ExtResource("4_0cvbd")
+action = 12
 params = ["Effet magique 3.PNG"]
 
-[sub_resource type="Resource" id="Resource_ci50n"]
-script = ExtResource("3_fithg")
+[sub_resource type="Resource" id="Resource_mcnir"]
+script = ExtResource("4_0cvbd")
 action = 1
 params = [128.0]
 
-[sub_resource type="Resource" id="Resource_fvgim"]
-script = ExtResource("2_5effu")
+[sub_resource type="Resource" id="Resource_3pu0q"]
+script = ExtResource("3_cfd5d")
 text = ""
-actions = Array[ExtResource("3_fithg")]([SubResource("Resource_0cvbd"), SubResource("Resource_ci50n")])
+actions = Array[ExtResource("4_0cvbd")]([SubResource("Resource_fvgim"), SubResource("Resource_mcnir")])
+symbole = 0
 
 [resource]
-script = ExtResource("4_cfd5d")
+script = ExtResource("5_ci50n")
 id = 127
 next = 128
-character = ExtResource("1_tsxes")
-character_mood = "pyjama_panique"
+character = ExtResource("1_5effu")
+character_mood = "happy"
 character_mood_droit = ""
-character_mood_centre = ""
+character_centre = ExtResource("2_fithg")
+character_mood_centre = "pyjama_panique"
 left_talker = true
-center_talker = false
-text = "[i]Je ne comprends rien à ce qui se passe. Toute cette lumière, ses bruits.[/i]"
-choices = Array[ExtResource("2_5effu")]([SubResource("Resource_fvgim")])
+center_talker = true
+text = "[i]Je ne comprends rien à ce qui se passe. Toute cette lumière, ces bruits.[/i]"
+choices = Array[ExtResource("3_cfd5d")]([SubResource("Resource_3pu0q")])

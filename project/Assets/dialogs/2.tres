@@ -14,5 +14,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Dans The Color of Sin, votre progression et sauvegardée automatiquement: vous ne pouvez pas modifier vos décisions."
+text = "Dans [i]The Color of Sin[/i], votre progression est sauvegardée automatiquement: vous ne pouvez pas modifier vos décisions."
 choices = Array[ExtResource("2_wby58")]([])

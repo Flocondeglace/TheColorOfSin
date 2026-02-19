@@ -14,5 +14,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "La somme de vos choix mène à des branches de narration différentes: il est impossible de « perdre »."
+text = "La somme de vos choix mène à des branches de narration différentes : il est impossible de « perdre »."
 choices = Array[ExtResource("2_yvylv")]([])

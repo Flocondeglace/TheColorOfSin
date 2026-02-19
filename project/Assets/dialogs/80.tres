@@ -9,8 +9,8 @@
 
 [sub_resource type="Resource" id="Resource_fdw2o"]
 script = ExtResource("5_uyt3v")
-action = 4
-params = ["Foulle.PNG"]
+action = 10
+params = []
 
 [sub_resource type="Resource" id="Resource_ysx0h"]
 script = ExtResource("5_uyt3v")
@@ -21,6 +21,7 @@ params = [81.0]
 script = ExtResource("4_amu6l")
 text = ""
 actions = Array[ExtResource("5_uyt3v")]([SubResource("Resource_fdw2o"), SubResource("Resource_ysx0h")])
+symbole = 0
 
 [resource]
 script = ExtResource("6_s0gnh")
@@ -34,5 +35,5 @@ character_centre = ExtResource("2_tgwry")
 character_mood_centre = "taquin"
 left_talker = true
 center_talker = true
-text = "une nouvelle?"
+text = "une nouvelle ?"
 choices = Array[ExtResource("4_amu6l")]([SubResource("Resource_88ee8")])

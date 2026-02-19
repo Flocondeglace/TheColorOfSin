@@ -14,5 +14,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Mon lit chérie!"
+text = "Mon lit chéri !"
 choices = Array[ExtResource("2_375pd")]([])

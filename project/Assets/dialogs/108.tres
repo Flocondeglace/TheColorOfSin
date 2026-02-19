@@ -16,5 +16,5 @@ character_mood_droit = "droite_colere"
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Comment vous…"
+text = "Comment vous... ?"
 choices = Array[ExtResource("3_uf0aa")]([])

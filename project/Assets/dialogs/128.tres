@@ -1,18 +1,37 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=4 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=9 format=3]
 
-[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_spl6m"]
-[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_rd8t8"]
-[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_b61r1"]
+[ext_resource type="Resource" path="res://Assets/characters/Inconnu.tres" id="1_b61r1"]
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="2_dglbx"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_tfj1g"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="4_sxatw"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_en64h"]
+
+[sub_resource type="Resource" id="Resource_47nss"]
+script = ExtResource("4_sxatw")
+action = 13
+params = ["Effet magique 1.PNG"]
+
+[sub_resource type="Resource" id="Resource_oomux"]
+script = ExtResource("4_sxatw")
+action = 1
+params = [129.0]
+
+[sub_resource type="Resource" id="Resource_6ho1a"]
+script = ExtResource("3_tfj1g")
+text = ""
+actions = Array[ExtResource("4_sxatw")]([SubResource("Resource_47nss"), SubResource("Resource_oomux")])
+symbole = 0
 
 [resource]
-script = ExtResource("3_b61r1")
+script = ExtResource("5_en64h")
 id = 128
 next = 129
-character = ExtResource("1_spl6m")
-character_mood = "pyjama_soupir"
+character = ExtResource("1_b61r1")
+character_mood = "happy"
 character_mood_droit = ""
-character_mood_centre = ""
+character_centre = ExtResource("2_dglbx")
+character_mood_centre = "pyjama_soupir"
 left_talker = true
-center_talker = false
+center_talker = true
 text = "Tout c'est enfin arrêté."
-choices = Array[ExtResource("2_rd8t8")]([])
+choices = Array[ExtResource("3_tfj1g")]([SubResource("Resource_6ho1a")])

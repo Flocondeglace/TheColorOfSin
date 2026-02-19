@@ -16,5 +16,5 @@ character_mood_droit = "droit_neutre"
 character_mood_centre = ""
 left_talker = false
 center_talker = false
-text = "Bon on fera ça après les cours commence cache toi et te fais pas remarquer."
+text = "Bon, on fera ça après. Les cours commencent, cache toi et te fais pas remarquer."
 choices = Array[ExtResource("3_ssv61")]([])

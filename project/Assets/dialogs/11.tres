@@ -14,5 +14,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "(Je lâche mes affaires et me jette sur mon lit.)"
+text = "[i]Je lâche mes affaires et me jette sur mon lit.[/i]"
 choices = Array[ExtResource("2_hvmi8")]([])

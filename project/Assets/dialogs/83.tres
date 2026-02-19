@@ -1,49 +1,56 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=11 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=13 format=3]
 
-[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_5g5dx"]
-[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_8i0ee"]
-[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_52lcg"]
-[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_lsroa"]
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_52lcg"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="2_lsroa"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="3_y7eyo"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_op6t4"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="5_piind"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="6_my3y4"]
 
-[sub_resource type="Resource" id="Resource_y7eyo"]
-script = ExtResource("3_52lcg")
+[sub_resource type="Resource" id="Resource_acb76"]
+script = ExtResource("5_piind")
 action = 1
 params = [84.0]
 
-[sub_resource type="Resource" id="Resource_op6t4"]
-script = ExtResource("2_8i0ee")
+[sub_resource type="Resource" id="Resource_ivq20"]
+script = ExtResource("4_op6t4")
 text = "Être vague"
-actions = Array[ExtResource("3_52lcg")]([SubResource("Resource_y7eyo")])
+actions = Array[ExtResource("5_piind")]([SubResource("Resource_acb76")])
+symbole = 0
 
-[sub_resource type="Resource" id="Resource_piind"]
-script = ExtResource("3_52lcg")
+[sub_resource type="Resource" id="Resource_m0hno"]
+script = ExtResource("5_piind")
 action = 1
 params = [90.0]
 
-[sub_resource type="Resource" id="Resource_my3y4"]
-script = ExtResource("2_8i0ee")
+[sub_resource type="Resource" id="Resource_pygpq"]
+script = ExtResource("4_op6t4")
 text = "Rester silencieuse"
-actions = Array[ExtResource("3_52lcg")]([SubResource("Resource_piind")])
+actions = Array[ExtResource("5_piind")]([SubResource("Resource_m0hno")])
+symbole = 0
 
-[sub_resource type="Resource" id="Resource_acb76"]
-script = ExtResource("3_52lcg")
+[sub_resource type="Resource" id="Resource_wahcy"]
+script = ExtResource("5_piind")
 action = 1
 params = [95.0]
 
-[sub_resource type="Resource" id="Resource_ivq20"]
-script = ExtResource("2_8i0ee")
+[sub_resource type="Resource" id="Resource_xmmyv"]
+script = ExtResource("4_op6t4")
 text = "Tout déballer"
-actions = Array[ExtResource("3_52lcg")]([SubResource("Resource_acb76")])
+actions = Array[ExtResource("5_piind")]([SubResource("Resource_wahcy")])
+symbole = 0
 
 [resource]
-script = ExtResource("4_lsroa")
+script = ExtResource("6_my3y4")
 id = 83
 next = 84
-character = ExtResource("1_5g5dx")
+character = ExtResource("1_52lcg")
 character_mood = "pyjama_panique"
-character_mood_droit = ""
-character_mood_centre = ""
+character_droit = ExtResource("3_y7eyo")
+character_mood_droit = "droite_neutre"
+character_centre = ExtResource("2_lsroa")
+character_mood_centre = "droite_souriant"
 left_talker = true
 center_talker = false
 text = ""
-choices = Array[ExtResource("2_8i0ee")]([SubResource("Resource_op6t4"), SubResource("Resource_my3y4"), SubResource("Resource_ivq20")])
+choices = Array[ExtResource("4_op6t4")]([SubResource("Resource_ivq20"), SubResource("Resource_pygpq"), SubResource("Resource_xmmyv")])

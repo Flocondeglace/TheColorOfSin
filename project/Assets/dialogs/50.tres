@@ -19,6 +19,7 @@ params = [51.0]
 script = ExtResource("2_j1olb")
 text = ""
 actions = Array[ExtResource("3_sjm0h")]([SubResource("Resource_e72fh"), SubResource("Resource_inuci")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_obyfp")
@@ -30,5 +31,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "(J’ai à peine le temps de réaliser se qui ce passe qu’il m’amène jusqu’à un portail.)"
+text = "[i]J’ai à peine le temps de réaliser se qui ce passe qu’il m’amène jusqu’à un portail.[/i]"
 choices = Array[ExtResource("2_j1olb")]([SubResource("Resource_xpr06")])

@@ -16,5 +16,5 @@ character_mood_droit = "droit_inquiet"
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "DE LA MAGIE?!"
+text = "DE LA MAGIE ?!"
 choices = Array[ExtResource("3_vexbt")]([])

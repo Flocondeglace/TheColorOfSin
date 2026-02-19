@@ -16,5 +16,5 @@ character_mood_droit = "droit_inquiet"
 character_mood_centre = ""
 left_talker = false
 center_talker = false
-text = "C’est bizarre tout a l’air normal."
+text = "C’est bizarre, tout a l’air normal."
 choices = Array[ExtResource("3_d5cwy")]([])

@@ -16,5 +16,5 @@ character_mood_droit = "droit_neutre"
 character_mood_centre = ""
 left_talker = false
 center_talker = false
-text = "Viens avec moi je t’amène voir un soigneur."
+text = "Viens avec moi. Je t’amène voir un soigneur."
 choices = Array[ExtResource("3_i1pkb")]([])

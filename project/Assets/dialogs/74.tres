@@ -16,5 +16,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = false
 center_talker = false
-text = "[i]Le cours a continué jusqu’à la sonnerie et tous les élèves sortent[/i])"
+text = "[i]Le cours a continué jusqu’à la sonnerie et tous les élèves sortent[/i]"
 choices = Array[ExtResource("3_flxui")]([])

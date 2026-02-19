@@ -14,5 +14,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Déjà 18 ans… "
+text = "Déjà 18 ans... "
 choices = Array[ExtResource("2_o41e6")]([])

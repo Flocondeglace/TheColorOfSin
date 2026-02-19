@@ -18,5 +18,5 @@ character_centre = ExtResource("2_eckus")
 character_mood_centre = "colere"
 left_talker = true
 center_talker = false
-text = "Qu’est-ce qui se passe quand les fils deviennent rouge?"
+text = "Que ce passe-t-il quand les fils deviennent rouge ?"
 choices = Array[ExtResource("4_oioxx")]([])

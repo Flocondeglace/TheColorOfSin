@@ -16,5 +16,5 @@ character_mood_droit = "droite_neutre"
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "[i]Soudain j'eu une révélation ![/i]"
+text = "[i]Soudain, j'ai eu une révélation ![/i]"
 choices = Array[ExtResource("3_jevvn")]([])

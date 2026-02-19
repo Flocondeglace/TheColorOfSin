@@ -1,20 +1,37 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=9 format=3]
 
-[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_701f8"]
-[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_rmejs"]
-[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_cbaty"]
-[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_xedlg"]
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_rmejs"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_cbaty"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_xedlg"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="4_jxaxw"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_e48hw"]
+
+[sub_resource type="Resource" id="Resource_5i3ho"]
+script = ExtResource("4_jxaxw")
+action = 12
+params = ["Zone.PNG", "magie"]
+
+[sub_resource type="Resource" id="Resource_y4rw5"]
+script = ExtResource("4_jxaxw")
+action = 1
+params = [116.0]
+
+[sub_resource type="Resource" id="Resource_3pdnw"]
+script = ExtResource("3_xedlg")
+text = ""
+actions = Array[ExtResource("4_jxaxw")]([SubResource("Resource_5i3ho"), SubResource("Resource_y4rw5")])
+symbole = 0
 
 [resource]
-script = ExtResource("4_xedlg")
+script = ExtResource("5_e48hw")
 id = 115
 next = 116
-character = ExtResource("1_701f8")
+character = ExtResource("1_rmejs")
 character_mood = "pyjama_neutre_gauche"
-character_droit = ExtResource("2_rmejs")
+character_droit = ExtResource("2_cbaty")
 character_mood_droit = "droite_neutre"
 character_mood_centre = ""
 left_talker = false
 center_talker = false
-text = "Non je t’ai juste sondé."
-choices = Array[ExtResource("3_cbaty")]([])
+text = "Non, je t’ai juste sondé."
+choices = Array[ExtResource("3_xedlg")]([SubResource("Resource_3pdnw")])

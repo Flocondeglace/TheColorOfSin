@@ -1,34 +1,37 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=8 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=9 format=3]
 
-[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="1_rcuy2"]
-[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_7w075"]
-[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="3_ejc3i"]
-[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_v2pb2"]
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_7w075"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_ejc3i"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_v2pb2"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="4_ldxbw"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_3rla7"]
 
-[sub_resource type="Resource" id="Resource_ldxbw"]
-script = ExtResource("3_ejc3i")
-action = 4
-params = ["Zone.PNG"]
+[sub_resource type="Resource" id="Resource_tlc38"]
+script = ExtResource("4_ldxbw")
+action = 12
+params = ["Vision.PNG", "magie"]
 
-[sub_resource type="Resource" id="Resource_3rla7"]
-script = ExtResource("3_ejc3i")
+[sub_resource type="Resource" id="Resource_3ti4u"]
+script = ExtResource("4_ldxbw")
 action = 1
 params = [117.0]
 
-[sub_resource type="Resource" id="Resource_tlc38"]
-script = ExtResource("2_7w075")
+[sub_resource type="Resource" id="Resource_iqa6w"]
+script = ExtResource("3_v2pb2")
 text = ""
-actions = Array[ExtResource("3_ejc3i")]([SubResource("Resource_ldxbw"), SubResource("Resource_3rla7")])
+actions = Array[ExtResource("4_ldxbw")]([SubResource("Resource_tlc38"), SubResource("Resource_3ti4u")])
+symbole = 0
 
 [resource]
-script = ExtResource("4_v2pb2")
+script = ExtResource("5_3rla7")
 id = 116
 next = 117
-character = ExtResource("1_rcuy2")
-character_mood = "explication"
-character_mood_droit = ""
+character = ExtResource("1_7w075")
+character_mood = "pyjama_intrigué_gauche"
+character_droit = ExtResource("2_ejc3i")
+character_mood_droit = "explication"
 character_mood_centre = ""
-left_talker = true
+left_talker = false
 center_talker = false
-text = "Il y a aussi la magie « zone » liée à l’espace."
-choices = Array[ExtResource("2_7w075")]([SubResource("Resource_tlc38")])
+text = "Il y a aussi la magie de « zone » liée à l’espace."
+choices = Array[ExtResource("3_v2pb2")]([SubResource("Resource_iqa6w")])

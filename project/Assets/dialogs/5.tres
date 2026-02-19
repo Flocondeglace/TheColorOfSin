@@ -12,18 +12,20 @@ params = [6.0]
 
 [sub_resource type="Resource" id="Resource_laqyv"]
 script = ExtResource("2_6mhtc")
-text = "arrête d'y penser"
+text = "Arrête d'y penser"
 actions = Array[ExtResource("3_nmlaq")]([SubResource("Resource_roej6")])
+symbole = 2
 
 [sub_resource type="Resource" id="Resource_6gho2"]
 script = ExtResource("3_nmlaq")
 action = 1
-params = [8.0]
+params = [150.0]
 
 [sub_resource type="Resource" id="Resource_54qif"]
 script = ExtResource("2_6mhtc")
-text = "se venger"
+text = "Se venger"
 actions = Array[ExtResource("3_nmlaq")]([SubResource("Resource_6gho2")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_nusnx")
@@ -35,5 +37,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Encore une fois cette journée de cours fut un enfer. J’ai encore attiré l’attention… Je suis sûr d’avoir entendu des gens se moquer de mois…"
+text = "Encore une fois cette journée de cours fut un enfer. J’ai encore attiré l’attention... Je suis sûre d’avoir entendu des gens se moquer de moi..."
 choices = Array[ExtResource("2_6mhtc")]([SubResource("Resource_laqyv"), SubResource("Resource_54qif")])

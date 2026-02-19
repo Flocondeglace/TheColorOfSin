@@ -19,6 +19,7 @@ params = ["Maman"]
 script = ExtResource("2_ccpor")
 text = ""
 actions = Array[ExtResource("3_jdtr6")]([SubResource("Resource_h6c2p"), SubResource("Resource_1fu2r")])
+symbole = 0
 
 [resource]
 script = ExtResource("4_s7gls")
@@ -30,5 +31,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Oui papa j’ai pas oublié"
+text = "Oui papa, j’ai pas oublié..."
 choices = Array[ExtResource("2_ccpor")]([SubResource("Resource_og14n")])

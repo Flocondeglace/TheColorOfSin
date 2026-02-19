@@ -16,5 +16,5 @@ character_mood_droit = "droite_intrigué"
 character_mood_centre = ""
 left_talker = false
 center_talker = false
-text = "Étrange… je vais me renseigner à ce sujet."
+text = "Étrange... je vais me renseigner à ce sujet."
 choices = Array[ExtResource("3_ypkuh")]([])

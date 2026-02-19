@@ -14,5 +14,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "On avait parlé de la construction de la cité et des savoirs qu’il y avait dans les sous-sols."
+text = "On avait parlé de la construction de la citée et des savoirs qu’il y avait dans les sous-sols."
 choices = Array[ExtResource("2_462xd")]([])

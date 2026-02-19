@@ -14,5 +14,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "(Qu’es ce qu’il ce passe?! Je suis où là ??? )"
+text = "[i]Qu’est-ce qu’il se passe ?! Je suis où là ??? [/i]"
 choices = Array[ExtResource("2_qlrdm")]([])

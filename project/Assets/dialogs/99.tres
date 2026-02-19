@@ -1,20 +1,22 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=6 format=3]
 
-[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_oxbtp"]
-[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="2_yxn72"]
-[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_ai654"]
-[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_4iagy"]
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_yxn72"]
+[ext_resource type="Resource" path="res://Assets/characters/Neven.tres" id="2_ai654"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="3_4iagy"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="4_bx3xp"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_jmm5c"]
 
 [resource]
-script = ExtResource("4_4iagy")
+script = ExtResource("5_jmm5c")
 id = 99
 next = 100
-character = ExtResource("1_oxbtp")
-character_mood = "pyjama_timide_gauche"
-character_droit = ExtResource("2_yxn72")
-character_mood_droit = "droite_taquin"
-character_mood_centre = ""
-left_talker = false
-center_talker = false
+character = ExtResource("1_yxn72")
+character_mood = "pyjama_timide"
+character_droit = ExtResource("3_4iagy")
+character_mood_droit = "droite_neutre"
+character_centre = ExtResource("2_ai654")
+character_mood_centre = "droite_taquin"
+left_talker = true
+center_talker = true
 text = "Je savais que tu étais particulière."
-choices = Array[ExtResource("3_ai654")]([])
+choices = Array[ExtResource("4_bx3xp")]([])

@@ -1,18 +1,20 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=4 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=5 format=3]
 
-[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_b0wml"]
-[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_lo27j"]
-[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_ws2fp"]
+[ext_resource type="Resource" path="res://Assets/characters/Inconnu.tres" id="1_lo27j"]
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="2_ws2fp"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_lgi3h"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="4_8ybhp"]
 
 [resource]
-script = ExtResource("3_ws2fp")
+script = ExtResource("4_8ybhp")
 id = 122
 next = 123
-character = ExtResource("1_b0wml")
-character_mood = "pyjama_panique"
+character = ExtResource("1_lo27j")
+character_mood = "happy"
 character_mood_droit = ""
-character_mood_centre = ""
+character_centre = ExtResource("2_ws2fp")
+character_mood_centre = "pyjama_panique"
 left_talker = true
-center_talker = false
-text = "[i]Je m’installe au centre des magnifiques cristaux, mes jambes tremblent, mais je n’ai pas d’autres choix que de faire ce qu’il me dit. Je ne connais rien à ce monde et je suis totalement perdue.[/i]"
-choices = Array[ExtResource("2_lo27j")]([])
+center_talker = true
+text = "[i]Je m’installe au centre des magnifiques cristaux, mes jambes tremblent, mais je n’ai pas d’autre choix que de faire ce qu’il me dit. Je ne connais rien à ce monde et je suis totalement perdue.[/i]"
+choices = Array[ExtResource("3_lgi3h")]([])

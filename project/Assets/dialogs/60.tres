@@ -16,5 +16,5 @@ character_mood_droit = "droit_neutre"
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "(en chuchotant) C’est quoi cette prophétie ? "
+text = "[i]en chuchotant[/i] C’est quoi cette prophétie ? "
 choices = Array[ExtResource("3_lyltp")]([])

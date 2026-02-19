@@ -1,18 +1,37 @@
-[gd_resource type="Resource" script_class="DialogData" load_steps=4 format=3]
+[gd_resource type="Resource" script_class="DialogData" load_steps=9 format=3]
 
-[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="1_oknak"]
-[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="2_u0m8w"]
-[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="3_qms0u"]
+[ext_resource type="Resource" path="res://Assets/characters/Lucie.tres" id="1_qms0u"]
+[ext_resource type="Resource" path="res://Assets/characters/Proviseur.tres" id="2_lf6uc"]
+[ext_resource type="Script" path="res://Scripts/ChoiceData.gd" id="3_xjqq5"]
+[ext_resource type="Script" path="res://Scripts/ActionData.gd" id="4_cydj5"]
+[ext_resource type="Script" path="res://Scripts/DialogData.gd" id="5_uvj4p"]
+
+[sub_resource type="Resource" id="Resource_8l0ky"]
+script = ExtResource("4_cydj5")
+action = 13
+params = ["echo.PNG", "magie"]
+
+[sub_resource type="Resource" id="Resource_bbut3"]
+script = ExtResource("4_cydj5")
+action = 1
+params = [114.0]
+
+[sub_resource type="Resource" id="Resource_jv6pr"]
+script = ExtResource("3_xjqq5")
+text = ""
+actions = Array[ExtResource("4_cydj5")]([SubResource("Resource_8l0ky"), SubResource("Resource_bbut3")])
+symbole = 0
 
 [resource]
-script = ExtResource("3_qms0u")
+script = ExtResource("5_uvj4p")
 id = 113
 next = 114
-character = ExtResource("1_oknak")
-character_mood = "explication"
-character_mood_droit = ""
+character = ExtResource("1_qms0u")
+character_mood = "pyjama_intrigué_gauche"
+character_droit = ExtResource("2_lf6uc")
+character_mood_droit = "explication"
 character_mood_centre = ""
-left_talker = true
+left_talker = false
 center_talker = false
-text = "La magie « écho » liée aux esprits c’est ce qui m’a permis tout à l’heure de connaître ton prénom."
-choices = Array[ExtResource("2_u0m8w")]([])
+text = "La magie « écho », liée aux esprits, c’est celle qui m’a permis tout à l’heure de connaître ton prénom."
+choices = Array[ExtResource("3_xjqq5")]([SubResource("Resource_jv6pr")])

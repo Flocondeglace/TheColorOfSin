@@ -14,5 +14,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "(et qu’on se retrouve dans se qui ressemble à un amphithéâtre de FAC en plus … majestueux.)"
+text = "[i]et qu’on se retrouve dans ce qui ressemble à un amphithéâtre de FAC. En plus ... majestueux.[/i]"
 choices = Array[ExtResource("2_dtwmk")]([])

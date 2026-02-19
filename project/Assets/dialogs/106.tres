@@ -16,5 +16,5 @@ character_mood_droit = "droite_neutre"
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "Mais attendez comment connaissez-vous mon prénom ?"
+text = "Mais, attendez, comment connaissez-vous mon prénom ?"
 choices = Array[ExtResource("3_5eqb2")]([])

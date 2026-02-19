@@ -14,5 +14,5 @@ character_mood_droit = ""
 character_mood_centre = ""
 left_talker = true
 center_talker = false
-text = "fin du jeu merci d’avoir joué "
+text = "Vous n'êtes pas très aventurier... Fin du jeu, merci d’avoir joué !"
 choices = Array[ExtResource("2_uv5ul")]([])
