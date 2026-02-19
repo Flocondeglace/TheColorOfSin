@@ -5,3 +5,4 @@ class_name CharacterData
 @export_dir var spriteFolder: String
 @export var color: Color
 @export var love: int = 5
+@export var altitude: float = 1.0

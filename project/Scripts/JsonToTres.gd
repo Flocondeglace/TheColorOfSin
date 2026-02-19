@@ -34,10 +34,11 @@ func read_json(path):
 	return json_data
 
 func convertir_dialog_json_en_tres():
-	for d in dialog_json:
-		var json_data = read_json(dialog_dir_json+"/"+d)
-		if json_data==null:
-			return
+	var json_file = read_json(dialog_dir_json+"/dialogs.json")
+	if json_file == null:
+		return
+	var dialogs = json_file.get("dialogs")
+	for json_data in dialogs:
 		var res : DialogData = DialogData.new()
 		res.character = load(char_save_path + "/" + json_data.get("character", "Inconnu") + ".tres")
 		var mood_name :String = json_data.get("character_mood", "happy")#.to_upper()
@@ -54,13 +55,14 @@ func convertir_dialog_json_en_tres():
 			var mood_name_centre :String = json_data.get("character_mood_centre", "happy")#.to_upper()
 			res.character_mood_centre = mood_name_centre.to_lower() #DialogData.CharacterMood.find_key(DialogData.CharacterMood.get(mood_name))
 		res.center_talker = json_data.get("center_talker", false)
-		res.id = int(d.trim_suffix(".json"))
+		res.id = json_data.get("id")
 		res.next = json_data.get("next", 0)
 		res.text = json_data.get("text", "")
 		var json_choices = json_data.get("choices", [])
 		for c in json_choices:
 			var choice_data : ChoiceData = ChoiceData.new()
 			choice_data.text = c.get("text")
+			choice_data.symbole = c.get("symbole", 0)
 			var actions_json = c.get("actions")
 			for a in actions_json:
 				var action : ActionData = ActionData.new()
